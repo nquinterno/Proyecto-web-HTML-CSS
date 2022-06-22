@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shorcut icon" href="./assets/img/icono.ico">
+    <title>Divididos</title>
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <div class="album-grid">
+        <header class="header">
+            <div class="header__icon">
+                <img class="header__icon__img" src="../assets/img/divididos_2.png" alt="Icono de Divididos">
+            </div>
+            
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="lnr lnr-menu"></i>
+            </label>
+
+            <nav class="header__nav">
+                <ul class="header__nav__list">
+                    <li><a href="../index.html"> Inicio</a></li>
+                    <li><a href="../pages/banda.html">Banda</a></li>
+                    <li><a href="../pages/albumes.html">Albumes</a></li>
+                    <li><a href="../pages/shows.html">Shows</a></li>
+                    <li><a href="../pages/contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!----------- tabla con columnas de Album, año, canciones e iframe de spotify para escuchar -------------------->
+        <main class="albumes">
+            <p class="section__tittle">Albumes</p>
+            <div class="section__album">
+                
+                <div class="container-fluid albumes__tabla">
+                    <div class="row justify-content-center">
+                        <div class="col-3 col-sm-3 col-md-3 col-lg-2 col-xl-2 albumes__album">
+                            <p class="d-flex justify-content-center align-items-center">Album</p>
+                        </div>
+        
+                        <div class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1 albumes__año">
+                            <p class="d-flex align-items-center justify-content-center">Año</p>
+                        </div>
+        
+                        <div class="col-8 col-sm-8 col-md-8 col-lg-5 col-xl-5 d-flex align-content-center justify-content-center albumes__temas">
+                            <p class="d-flex align-items-center justify-content-center">Títulos</p>
+                        </div>
+                
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 albumes__spotify-1">
+                            <p class="d-flex align-items-center justify-content-center">Escuchá</p>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-3 col-sm-3 col-md-3 col-lg-2 col-xl-2 albumes__album">
+                            <p class="d-flex justify-content-center align-items-center">40 Dibujos Ahí en el Piso</p>
+                        </div>
+        
+                        <div class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1 albumes__año">
+                            <p class="d-flex align-items-center justify-content-center">1989</p>
+                        </div>
+        
+                        <div class="col-8 col-sm-8 col-md-8 col-lg-5 col-xl-5 d-flex pt-2 pb-2 align-content-center justify-content-center albumes__temas">
+                            <ol>
+                                <li>«Camarón Bombay» - ( 1:07 )</li>
+                                <li>«Che, Qué Esperás?» - ( 4:04 )</li>
+                                <li>«La Mosca Porteña» - ( 4:31 )</li>
+                                <li>«Haciendo Cosas Raras» - ( 3:07 )</li>
+                                <li>«Los Sueños Y Las Guerras» - ( 4:00 )</li>
+                                <li>«Gárgara Larga» - ( 4:26 )</li>
+                                <li>«Camarón Bombay» - ( 0:36 )</li>
+                                <li> «Un Montón De Huesos» - ( 4:38 )</li>
+                                <li>«Light My Fire» - ( 3:48 )</li>
+                                <li>«Los Hombres Huecos» - ( 5:21 )</li>
+                                <li>«De Qué Diario Sos?» - ( 4:11 )</li>
+                                <li>«La Foca» - ( 2:50 )</li>
+                                <li>«Camarón Bombay» - ( 1:03 )</li>   
+                            </ol>
+                        </div>
+                
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 d-flex align-items-center justify-content-center albumes__spotify">
+                            <iframe class="spotify_reprod" style="border-radius:12px" src="https://open.spotify.com/embed/album/0ZNRl9pxbglsYLKRdSEmz0?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-3 col-sm-3 col-md-3 col-lg-2 col-xl-2 albumes__album">
+                            <p class="d-flex justify-content-center align-items-center">Acariciando lo Aspero</p>
+                        </div>
+        
+                        <div class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1 albumes__año">
+                            <p class="d-flex align-items-center justify-content-center">1991</p>
+                        </div>
+        
+                        <div class="col-8 col-sm-8 col-md-8 col-lg-5 col-xl-5 d-flex pt-2 pb-2 align-content-center justify-content-center albumes__temas">
+                            <ol>
+                                <li>«El 38» - ( 2:29 )</li>
+                                <li>«Sábado» - ( 4:16 )</li>
+                                <li>«Cuadros Colgados» - ( 2:22 )</li>
+                                <li>«Cielito Lindo» - ( 3:38 )</li>
+                                <li>«Qué Tal?» - ( 3:00 )</li>
+                                <li>«Sisters» - ( 4:44 )</li>
+                                <li>«Ala Delta» - ( 5:54 )</li>
+                                <li>«Azulejo» - ( 3:07 )</li>
+                                <li>«El Burrito» - ( 3:21 )</li>
+                                <li>«Jamelosapoaí» - ( 0:44 )</li>
+                                <li>«Paraguay» - ( 2:16 )</li>
+                                <li>«Voodoo Child» - ( 4:17 )</li>
+                                <li>«Haciendo Cola Para Nacer» - ( 2:52 )</li>
+                            </ol>
+                        </div>
+                
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 d-flex align-items-center justify-content-center albumes__spotify">
+                            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/5UmrOPpQ3VmXmBRSvXMbcR?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                        </div>
+
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-3 col-sm-3 col-md-3 col-lg-2 col-xl-2 albumes__album">
+                            <p class="d-flex justify-content-center align-items-center">La era de la boludez<p>
+                        </div>
+        
+                        <div class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1 albumes__año">
+                            <p class="d-flex align-items-center justify-content-center">1993</p>
+                        </div>
+        
+                        <div class="col-8 col-sm-8 col-md-8 col-lg-5 col-xl-5 d-flex pt-2 pb-2 align-content-center justify-content-center albumes__temas">
+                            <ol>
+                                <li>«Salir a Asustar» - ( 3:20 )</li>
+                                <li>«Ortega y Gases» - ( 2:32 )</li>
+                                <li>«El Arriero» - ( 6:38 )</li>
+                                <li>«Salir a Comprar» - ( 4:38 )</li>
+                                <li>«Qué Ves?» - ( 5:13 )</li>
+                                <li>«Pestaña De Camello» - ( 1:27 )</li>
+                                <li>«Rasputín/Hey Jude» - ( 3:54 )</li>
+                                <li>«Dame un Limón» - ( 3:57 )</li>
+                                <li>«Paisano de Hurlingham» - ( 3:58 )</li>
+                                <li>«Cristófolo Cacarnú» - ( 2:40 )</li>
+                                <li>«Indio Dejá el Mezcal» - ( 4:12 )</li>
+                                <li>«Huelga de Amores» - ( 1:53 )</li>
+                                <li>«Tajo C» - ( 2:47 )</li>
+                                <li>«Pestaña de Camello» - ( 4:10 )</li>
+                            </ol>
+                        </div>
+                
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 d-flex align-items-center justify-content-center albumes__spotify">
+                            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/4D1aIzUYKG6jytRjgT0QIx?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3 col-sm-3 col-md-3 col-lg-2 col-xl-2 albumes__album">
+                            <p class="d-flex justify-content-center align-items-center">La Travaladna</p>
+                        </div>
+        
+                        <div class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1 albumes__año">
+                            <p class="d-flex align-items-center justify-content-center">1995</p>
+                        </div>
+        
+                        <div class="col-8 col-sm-8 col-md-8 col-lg-5 col-xl-5 d-flex pt-2 pb-2 align-content-center justify-content-center albumes__temas">
+                            <ol>
+                                <li>«Tomando Mate En La Paz» - ( 4:23 )</li>
+                                <li>«Volver Ni A Palos» - ( 2:55 )</li>
+                                <li>«Basta Fuerte» - ( 4:55 )</li>
+                                <li>«15-5» - ( 2:24 )</li>
+                                <li>«Bolero Coya - Por El Aire Como Un Tiburón» - ( 1:30 )</li>
+                                <li>«Por El Aire Como Un Tiburón - Pachanga Coya» - ( 2:57 )</li>
+                                <li>«Mimoso A Marzo» - ( 4:02 )</li>
+                                <li>«Agua En Buenos Aires» - ( 5:25 )</li>
+                                <li>«Tatú Carreta» - ( 2:06 )</li>
+                                <li>«Hace Que Hace» - ( 2:57 )</li>
+                                <li>«Andá A Lavartelos» - ( 1:03 )</li>
+                                <li>«Abajo Solo» - ( 4:16 )</li>
+                            </ol>
+                        </div>
+                
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 d-flex align-items-center justify-content-center albumes__spotify">
+                            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/78CgEIHzH8TtgNmV63lMbF?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+
+                        </div>
+                    </div>
+                
+                    <div class="row justify-content-center">
+                        <div class="col-3 col-sm-3 col-md-3 col-lg-2 col-xl-2 albumes__album">
+                            <p class="d-flex justify-content-center align-items-center">Gol de Mujer</p>
+                        </div>
+        
+                        <div class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1 albumes__año">
+                            <p class="d-flex align-items-center justify-content-center">1998</p>
+                        </div>
+        
+                        <div class="col-8 col-sm-8 col-md-8 col-lg-5 col-xl-5 d-flex pt-2 pb-2 align-content-center justify-content-center albumes__temas">
+                            <ol>
+                                <li>«Alma De Budín» - ( 2:56 )</li>
+                                <li>«Nene De Antes» - ( 4:10 )</li>
+                                <li>«Luca» - ( 4:00 )</li>
+                                <li>«Clavador De Querubín» - ( 1:38 )</li>
+                                <li>«Sobrio A Las Piñas/Quién Se Tomó Todo El Vino?» - ( 4:28 )</li>
+                                <li>«Amor Japonés» - ( 3:19 )</li>
+                                <li>«Cabeza De Maceta» - ( 2:45 )</li>
+                                <li> «Letra Gótica» - ( 2:01 )</li>
+                                <li> «Cosas De Baboon» - ( 3:12 )</li>
+                                <li>«Gol De Mujer» - ( 4:32 )</li>
+                                <li>«Vientito Del Tucumán» - ( 3:19 )</li>
+                                <li>«Niño Hereje» - ( 1:39 )</li>
+                                <li>«Zombie» - ( 4:15 )</li>
+                                <li>«El Fantasio» - ( 5:51 )</li>
+                                <li>«Salgan Al Sol» - ( 1:46 )</li>
+                                <li>«El Gordo Legüero» - ( 1:47 )</li>
+                            </ol>
+                        </div>
+                
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 d-flex align-items-center justify-content-center albumes__spotify">
+                            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/5qNbbDBwCJn5haKSWxsBJS?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                        </div>
+                    </div>
+                
+                    <div class="row justify-content-center">
+                        <div class="col-3 col-sm-3 col-md-3 col-lg-2 col-xl-2 albumes__album">
+                            <p class="d-flex justify-content-center align-items-center">Narigón del siglo</p>
+                        </div>
+        
+                        <div class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1 albumes__año">
+                            <p class="d-flex align-items-center justify-content-center">2000</p>
+                        </div>
+        
+                        <div class="col-8 col-sm-8 col-md-8 col-lg-5 col-xl-5 d-flex pt-2 pb-2 align-content-center justify-content-center albumes__temas">
+                            <ol>
+                                <li>«Casi Estatua» - ( 3:42 )</li>
+                                <li>«Par Mil» - ( 3:19 )</li>
+                                <li>«Tanto Anteojo» - ( 3:05 )</li>
+                                <li>«Que Pasa Conmigo» - ( 4:04 )</li>
+                                <li> «Spaghetti Del Rock» - ( 3:33 )</li>
+                                <li>«Elefantes En Europa» - ( 3:25 )</li>
+                                <li>«Vida De Topo» - ( 5:03 )</li>
+                                <li>«La Ñapi De Mamá» - ( 5:22 )</li>
+                                <li>«Como Un Cuento» - ( 4:46 )</li>
+                                <li>«Sopa De Tortuga» - ( 3:35 )</li>
+                                <li>«Pasiones Zurdas Derechas» - ( 3:44 )</li>
+                                <li>«La Gente Se Divierte» - ( 4:48 )</li>
+                                <li>«La Firma Del Opa» - ( 1:55 )</li>
+ 
+                            </ol>
+                        </div>
+                
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 d-flex align-items-center justify-content-center albumes__spotify">
+                            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/4GkZExYLfegidZaO1BgpvU?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                        </div>
+                    </div>
+               
+                    <div class="row justify-content-center">
+                        <div class="col-3 col-sm-3 col-md-3 col-lg-2 col-xl-2 albumes__album">
+                            <p class="d-flex justify-content-center align-items-center">Vengo del Placard de otro</p>
+                        </div>
+        
+                        <div class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1 albumes__año">
+                            <p class="d-flex align-items-center justify-content-center">2002</p>
+                        </div>
+        
+                        <div class="col-8 col-sm-8 col-md-8 col-lg-5 col-xl-5 d-flex pt-2 pb-2 align-content-center justify-content-center albumes__temas">
+                            <ol>  
+                                <li>«Cajita Musical» - ( 5:29 )</li>
+                                <li>«Ay, Qué Dios Boludo» - ( 4:24 )</li>
+                                <li>«Brillo Triste De Un Canchero» - ( 5:19 )</li>
+                                <li>«Villancico Del Horror» - ( 4:19 )</li>
+                                <li>«Pepe Lui» - ( 4:08 )</li>
+                                <li>«Miente El After Hour» - ( 3:53 )</li>
+                                <li>«Despiértate Nena» - ( 5:40 )</li>
+                                <li>«Vengo Del Placard De Otro» - ( 2:50 )</li>
+                                <li>«Casitas Inundadas, A Votar» - ( 5:06 )</li>
+                                <li>«Un Alegre En Este Infierno» - ( 5:28 )</li>
+                                <li>«Libre El Jabalí» - ( 2:43 )</li>
+                                <li>«Aburridos Peligrosos» - ( 4:29 )</li>
+                                <li>«Puertas» - ( 4:39 )</li>
+                                <li>«Guanuqueando (en vivo en Tilcara)» - ( 8:33 )</li>
+                            </ol>
+                        </div>
+                
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 d-flex align-items-center justify-content-center albumes__spotify">
+
+                            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/3ljsgnB9LYYXmVmXIk5sby?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-3 col-sm-3 col-md-3 col-lg-2 col-xl-2 albumes__album">
+                            <p class="d-flex justify-content-center align-items-center">Amapola del 66</p>
+                        </div>
+        
+                        <div class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1 albumes__año">
+                            <p class="d-flex align-items-center justify-content-center">2010</p>
+                        </div>
+        
+                        <div class="col-8 col-sm-8 col-md-8 col-lg-5 col-xl-5 d-flex pt-2 pb-2 align-content-center justify-content-center albumes__temas">
+                            <ol>
+                                <li>«Hombre en U» - ( 4:02 )</li>
+                                <li>«Buscando un ángel» - ( 4:11 )</li>
+                                <li>«Mantecoso» - ( 6:19 )</li>
+                                <li>«Muerto a laburar» - ( 4:46 )</li>
+                                <li>«Amapola del 66» - ( 6:10 )</li>
+                                <li>«La flor azul» - ( 2:40 )</li>
+                                <li>«Senderos» - ( 6:16 )</li>
+                                <li>«Jujuy» - ( 4:12 )</li>
+                                <li>«Caminando» - ( 4:14 )</li>
+                                <li>«Boyar nocturno» - ( 7:08 )</li>
+                                <li>«Avanzando retroceden» - ( 3:45 )</li>
+                                <li>«Perro funk» - ( 5:08 )</li>
+                                <li>«Todos» - ( 4:48 )</li>
+
+                            </ol>
+                        </div>
+                
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 d-flex align-items-center justify-content-center albumes__spotify">
+                            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/6folUtOTlV2d6FiczqCGYs?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-center">
+                        <div class="col-3 col-sm-3 col-md-3 col-lg-2 col-xl-2 albumes__album">
+                            <p class="d-flex justify-content-center align-items-center">Haciendo cosas Raras»</p>
+                        </div>
+        
+                        <div class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1 albumes__año">
+                            <p class="d-flex align-items-center justify-content-center">2018</p>
+                        </div>
+        
+                        <div class="col-8 col-sm-8 col-md-8 col-lg-5 col-xl-5 d-flex pt-2 pb-2 align-content-center justify-content-center albumes__temas">
+                            <ol>
+                                <li>«Los sueños y las guerras» - ( 4:36 )</li>
+                                <li>«Che, ¿qué esperás?» - ( 4:02 )</li>
+                                <li>«La mosca porteña» - ( 6:05 )</li>
+                                <li>«Gárgara larga» - ( 5:38 )</li>
+                                <li>«Haciendo cosas raras» - ( 3:06 )</li>
+                                <li>«Un montón de huesos» - ( 5:04 )</li>
+                                <li>«Light my fire» - ( 6:16 )</li>
+                                <li>«¿De qué diario sos?» - ( 6:23 )</li>
+                                <li>«Caballos de la noche (La foca)» - ( 3:44 )</li>
+                                <li>«Los hombres huecos» - ( 7:20 )</li>
+                                <li>«Camarón Bombay» - ( 4:40 )</li>
+                            </ol>
+                        </div>
+                
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 d-flex align-items-center justify-content-center albumes__spotify">
+                            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/2DOryEm4WjrQr8eBQsqOOD?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!-- <table class="section__container__tabla-disc" cellpadding="10">
+
+                </table> -->
+            </div>
+        </main>
+
+        <!----------- footer con copyrigth y redes -------------------->
+
+        <footer class="footer">
+            <div class="footer-div">
+                <ul class="footer-div__redes">
+                    <li><a href="https://www.facebook.com/divididosoficial" target="_blank"><img class="footer__redes__img" src="..\assets\img\redes\facebook.png" alt="Logo Facebook"></a></li>
+                    <li><a href="https://www.instagram.com/divididosoficial/" target="_blank"><img class="footer__redes__img" src="..\assets\img\redes\instagram.png" alt="Logo Instagram"></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCMIb8--yPdP32qOiyZXG-eg/featured" target="_blank"><img class="footer__redes__img" src="..\assets\img\redes\youtube.png" alt="Logo Youtube"></a></li>
+                    <li><a href="https://open.spotify.com/artist/6ZIgPKHzpcswB8zh7sRIhx" target="_blank"><img class="footer__redes__img" src="..\assets\img\redes\spotify.png" alt="Logo Spotify"></a></li>
+                </ul>
+                <div class="footer-div__copy">
+                    <p class="footer__copy__text">&copy; Divididos 2022</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>

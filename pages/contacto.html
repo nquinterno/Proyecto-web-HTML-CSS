@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shorcut icon" href="./assets/img/icono.ico">
+    <title>Divididos</title>
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <div class="contact-grid">
+        <header class="header">
+            <div class="header__icon">
+                <img class="header__icon__img" src="../assets/img/divididos_2.png" alt="Icono de Divididos">
+            </div>
+            
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="lnr lnr-menu"></i>
+            </label>
+
+            <nav class="header__nav">
+                <ul class="header__nav__list">
+                    <li><a href="../index.html"> Inicio</a></li>
+                    <li><a href="../pages/banda.html">Banda</a></li>
+                    <li><a href="../pages/albumes.html">Albumes</a></li>
+                    <li><a href="../pages/shows.html">Shows</a></li>
+                    <li><a href="../pages/contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+    
+        <main class="main__contacto">
+            <p class="main__title">Contacto</p>
+            <div class="main__contacto-contacto">
+                <form class="main__contacto__form" action="">
+                    <div class="main__contacto__form__nombre">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" placeholder="Ingrese su Nombre">
+                    </div>
+        
+                    <div class="main__contacto__form__mail">
+                        <label for="mail">Email</label>
+                        <input type="email" id="mail" placeholder="Ingrese su email">
+                    </div>
+        
+                    <div class="main__contacto__form__destinatario">
+                        <label for="destinatario">Mensaje para</label>
+                        <select id="destinatario">
+                            <option value="01">Todos</option>
+                            <option value="02">Ricardo</option>
+                            <option value="03">Diego</option>
+                            <option value="04">Catriel</option>
+                        </select>
+                    </div>
+        
+                    <div class="main__contacto__form__cbox1">
+                        <label>¿Desea recibir informacion sobre shows y discografia?<input type="checkbox" id="cbox1" value="newsletter"> </label>
+                    </div>
+        
+                    <div class="main__contacto__form__comentarios">
+                        <textarea name="comentarios" id="comentarios" cols="30" rows="10" placeholder="Comentarios"></textarea>
+                    </div>
+        
+                    <div class="main__contacto__form__button">
+                        <input class="main__contacto__form__button__reset" type="reset" value="Borrar">
+                        <input class="main__contacto__form__button__send" type="submit" value="Enviar">
+                    </div>
+                </form>
+            </div>
+    
+        </main>
+    
+        <footer class="footer">
+            <div class="footer-div">
+                <ul class="footer-div__redes">
+                    <li><a href="https://www.facebook.com/divididosoficial" target="_blank"><img class="footer__redes__img" src="..\assets\img\redes\facebook.png" alt="Logo Facebook"></a></li>
+                    <li><a href="https://www.instagram.com/divididosoficial/" target="_blank"><img class="footer__redes__img" src="..\assets\img\redes\instagram.png" alt="Logo Instagram"></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCMIb8--yPdP32qOiyZXG-eg/featured" target="_blank"><img class="footer__redes__img" src="..\assets\img\redes\youtube.png" alt="Logo Youtube"></a></li>
+                    <li><a href="https://open.spotify.com/artist/6ZIgPKHzpcswB8zh7sRIhx" target="_blank"><img class="footer__redes__img" src="..\assets\img\redes\spotify.png" alt="Logo Spotify"></a></li>
+                </ul>
+                <div class="footer-div__copy">
+                    <p class="footer__copy__text">&copy; Divididos 2022</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>
