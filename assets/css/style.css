@@ -83,13 +83,13 @@ body{
         display:grid;
         justify-items: center;
         align-items: center;
-        grid-template-areas:"header header header header header"
-                            "sidel video video video sider"
-                            "sidel video video video sider"
-                            "sidel video video video sider"
-                            "sidel show show show sider"
-                            "sidel spotify spotify spotify sider"
-                            "footer footer footer footer footer"
+        grid-template-areas:" header header header "
+                            " video video video "
+                            "video video video "
+                            "video video video "
+                            " show show show "
+                            " spotify spotify spotify"
+                            "footer footer footer"
                             ;
         height: auto;
         width: 100%;
@@ -255,27 +255,37 @@ body{
 
     /* ----------------- Principal Video -------------------*/
 
-    .section__video{
+     .section__video{
         grid-area:video;
-        /* border: 2px solid;
-        border-color: white; */
         width: 70%;
         height: auto;
         max-width: 1080px;
         padding: 10px;
         margin: 10px;
-    }
+     }
+
+    /* .section__video-video{
+        width: 100%;
+        height: 600px;
+    }  */
 
     .section__video-video{
         width: 100%;
+        max-width: 1080px;
         height: 600px;
+    }
+    
+    .section__video-video iframe{
+        width: 100%;
+        max-width: 1080px;
+        height: 100%;
     }
 
     /* ----------------- Principal Video -------------------*/
 
     /* ----------------- Sides -------------------*/
 
-    .sidel{
+    /* .sidel{
         grid-area:sidel;
         width:100%;
         height: 100%;
@@ -295,15 +305,57 @@ body{
         border-color:#E31F2C;
         background-color: black;
         margin-right: 40px;
-    }
+    } */
 
     /* ----------------- Sides -------------------*/
 
     .section__shows{
         grid-area:show;
-        display:flex;
-        flex-direction: column;
-        justify-content: space-evenly;
+    }
+
+    .section__shows__flex__info__fecha{
+        background-color: black;
+        border: 2px solid #E31F2C;
+        border-radius:5px;
+        width: max-content;
+        padding: 10px;
+        color:white;
+        font-weight: 600;
+        text-align: center;
+    }
+    
+    
+    .section__shows__flex__info__text__button button{
+        width:30%;
+        background-color: black;
+        color:white;
+        border-radius: 5px;
+        border:2px solid #E31F2C;
+    }
+    
+    .section__shows__flex__info__text__button button a{
+        color:white;
+    }
+    
+    .section__shows__flex__info__text__button button a:hover{
+        color:black;
+    }
+    
+    .section__shows__flex__info__text__button button:hover{
+        background-color: #E31F2C;
+        color:black;
+    }
+    
+    .section__shows__flex__info__text p{
+        color:white;
+    
+    }
+
+   /* .section__shows{
+        grid-area:show;
+        /* display:flex;
+        flex-direction: column; */
+        /* justify-content: space-evenly;
         gap:10px;
         width:70vw;
         height: auto;
@@ -387,7 +439,7 @@ body{
         width: 100%;
         height: 100%;
         border-radius: 5px;
-    }
+    } */
 
     /* ------------------------------- index Shows ------------------------------- */
 
@@ -759,7 +811,7 @@ body{
         align-content: center;
     }
 
-    .container-grid__last-shows{
+    /* .container-grid__last-shows{
         display:grid;
         gap:10px;
         margin-top: 5px;
@@ -772,17 +824,17 @@ body{
         margin-left: 10px;
         margin-right: 10px;
         padding: 10px;
-    }
+    } */
 
-    .container-grid__last-shows__title{
+    /* .container-grid__last-shows__title{
         grid-area:title;
         font-size: 30px;
         color: #fff;
         padding: 20px;
         margin-bottom: 40px;
-    }
+    } */
 
-    .arrow-left{
+    /* .arrow-left{
         grid-area: arrowl;
         transform: scale(2,6);
         margin-left:20px;
@@ -805,10 +857,10 @@ body{
 
     .lnr.lnr-chevron-right, .lnr.lnr-chevron-left{
         color:white;
-    }
+    } */
 
 
-    .dot{
+    /* .dot{
         grid-area: dots;
         width: 100%;
         font-size: 70px;
@@ -816,9 +868,31 @@ body{
         align-content: center;
         justify-content: center;
         align-items: center;
+    } */
+    .galery-master{
+        grid-area:galery-master;
+
     }
 
-    .galery{
+    .carousel_grid{
+        grid-area: galery;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        width: 100%;
+    }
+
+    .carousel_img img{
+        width: 100%;
+        height:auto;
+    }
+
+    .epigrafe_galeria:hover{
+        background-color: rgba(43,43,43,0.5);
+        color:white; 
+    }
+
+    /* .galery{
         grid-area: galery;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -828,7 +902,7 @@ body{
     .container-grid__last-shows img{
         width: 100%;
         height:auto;
-    }
+    } */
 
     /* -------------------------------   Shows --------------------------------------*/
 
@@ -1331,6 +1405,7 @@ body{
         text-decoration: none;
         list-style: none;
         transition: all 0.5s;
+        z-index:99;
     }
 
     .header__nav__list li a{
@@ -1339,6 +1414,7 @@ body{
         font-size: 20px;
         color:#E31F2C;
         transition: all 0.5s;
+        z-index:99;
     }
 
     .header__nav__list li a:hover {
@@ -1348,6 +1424,7 @@ body{
         list-style-type:none;
         margin:50px 0px;
         line-height: 30px;
+        z-index:99;
     } 
 
     #check{
@@ -1444,7 +1521,7 @@ body{
         max-width: 1080px;
         padding-top: 10px;
         margin:0px;
-        margin-top:40px;
+        margin-top:20px;
     }
     
     .section__video-video{
@@ -1458,8 +1535,8 @@ body{
 
     .section__shows .section__tittle{
         font-size: 20px;
-        margin-top:20px;
-        margin-bottom:20px;
+        /* margin-top:20px;
+        margin-bottom:20px; */
     }
         
     .section__shows{
@@ -1575,7 +1652,7 @@ body{
 
 
     .section__tittle{
-        margin-top:80px;
+        /* margin-top:80px; */
         font-size: 25px;
     }
 

@@ -1,0 +1,25 @@
+   
+linea 605    
+
+.albumes__album:hover, .albumes__año:hover, .albumes__temas:hover, .albumes__spotify:hover, .albumes__spotify-1:hover{
+        background-color:rgb(43,43,43,0.5);
+    }
+
+
+linea 617
+
+ .albumes__album p:hover, .albumes__año p:hover, .albumes__temas ol:hover, .albumes__spotify iframe:hover{
+        transform: translate(-2px,-2px);
+    } 
+
+Linea 164
+    .header__nav__list li a:hover{
+        color:#E31F2C;
+        text-decoration: none;}
+
+linea 1339
+
+ .header__nav__list li a:hover {
+        color:#E31F2C;
+    }
+
