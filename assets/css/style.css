@@ -74,6 +74,17 @@ body{
     display:none;
 }
 
+/* ------------------------------------- Animaciones -------------------------------------------*/
+
+@keyframes spin { 
+    from { 
+        transform: rotate(0deg); 
+    } to { 
+        transform: rotate(3600deg); 
+    }
+}
+
+/* ------------------------------------- Animaciones -------------------------------------------*/
 
 /* ------------------------------------- DESKTOP -------------------------------------------*/
 
@@ -83,13 +94,11 @@ body{
         display:grid;
         justify-items: center;
         align-items: center;
-        grid-template-areas:" header header header "
-                            " video video video "
-                            "video video video "
-                            "video video video "
-                            " show show show "
-                            " spotify spotify spotify"
-                            "footer footer footer"
+        grid-template-areas:" header"
+                            " video"
+                            " show"
+                            " spotify"
+                            "footer"
                             ;
         height: auto;
         width: 100%;
@@ -110,6 +119,7 @@ body{
         width: 100%;
         height: 80px;
         padding: 10px 10px;
+        z-index:99;
         
     }
 
@@ -239,10 +249,37 @@ body{
         margin-bottom: 0px;
     }
 
+    .footer__copy__text:hover {
+        color:#E31F2C;
+    }
+
 
     .footer__redes__img{
         height: 30px;
         width:auto;
+    }
+
+    .social-insta, .social-face,.social-tube,.social-spoti{
+        color:gray;
+        font-size: 40px;
+    }
+
+    .social-insta:hover{
+        background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .social-face:hover{
+        color:#3b5998;
+    }
+
+    .social-tube:hover{
+        color:#c4302b;
+    }
+
+    .social-spoti:hover{
+        color:#1DB954;
     }
     
 
@@ -285,56 +322,63 @@ body{
 
     /* ----------------- Sides -------------------*/
 
-    /* .sidel{
-        grid-area:sidel;
-        width:100%;
-        height: 100%;
-        border-radius: 5px;
-        border:2px solid;
-        border-color:#E31F2C;
-        background-color: black;
-        margin-left: 40px;
-    }
-
-    .sider{
-        grid-area:sider;
-        width:100%;
-        height: 100%;
-        border-radius: 5px;
-        border:2px solid;
-        border-color:#E31F2C;
-        background-color: black;
-        margin-right: 40px;
-    } */
-
     /* ----------------- Sides -------------------*/
 
     .section__shows{
         grid-area:show;
+        padding:10px;
+        margin: 0;
+        width:100%
+    }
+    .section__shows__flex{
+        position: relative;
+        padding-bottom: 0;
+    }
+
+    .section__shows__flex p{
+        font-size: 16px;
+    }
+
+    .section__shows__flex::before{
+        content:"";
+        background-image:url(https://images.unsplash.com/photo-1532622286598-f87b4290fe22?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);
+        opacity: 0.5;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        left: 0;
+        top: 0;
+        bottom:0;
+        right:0;
+        position: absolute;
+        z-index:-1;
     }
 
     .section__shows__flex__info__fecha{
-        background-color: black;
+        /* background-color: black; */
         border: 2px solid #E31F2C;
         border-radius:5px;
         width: max-content;
         padding: 10px;
         color:white;
         font-weight: 600;
-        text-align: center;
+        text-align: center;  
+        position: relative;      
     }
     
     
     .section__shows__flex__info__text__button button{
-        width:30%;
+        width:max-content;
         background-color: black;
         color:white;
         border-radius: 5px;
         border:2px solid #E31F2C;
+        position: relative; 
     }
     
     .section__shows__flex__info__text__button button a{
         color:white;
+        
     }
     
     .section__shows__flex__info__text__button button a:hover{
@@ -344,102 +388,29 @@ body{
     .section__shows__flex__info__text__button button:hover{
         background-color: #E31F2C;
         color:black;
+
     }
     
     .section__shows__flex__info__text p{
         color:white;
+        position: relative; 
+       
     
     }
 
-   /* .section__shows{
-        grid-area:show;
-        /* display:flex;
-        flex-direction: column; */
-        /* justify-content: space-evenly;
-        gap:10px;
-        width:70vw;
-        height: auto;
-        padding: 10px;
-        margin: 10px auto;
-    }
-
-    .section__shows-shows{
-        display:flex;
-        justify-content: space-evenly;
-        flex-direction: row;
-        gap:10px;
-        width:100%;
-        height: auto;
-        padding: 10px;
-    }
-
-    .section_shows__row1, .section_shows__row2{
-        width:100%;
-    }
-
-    .section__shows__flex__info__fecha{
-        display:flex;
-        justify-content: start;
-    }
-
-    .section__shows__flex__info__fecha__tittle{
-        color:#E31F2C;
-        background-color: black;
-        border-color: #E31F2C;
-        border: 2px solid;
-        font-weight: bold;
-        border-radius: 5px;
-        text-align: center;
-        padding: 0px 5px;
-    }
-
-
-    .section__shows__flex__info{
-        color:#E31F2C;
-        text-decoration: none;
-        display:flex;
-        flex-flow: column nowrap;
-        padding: 5px;
-    }
-
-    .section__shows__flex__info__text{
-        font-size: 15px;
-        text-align: start;
-    }
-
-    .section__shows__flex__info__text__button{
-        display:flex;
-        justify-content: center;
-    ;
-    }
-
-    .section__shows__flex__info__text__button button{
-        background-color: black;
+    .section__shows__flex__map{
         margin: 0;
-        border-color:#E31F2C;
-        border-radius: 5px;
     }
 
+    .ticket-icon i{
+        color:#F1A400;
+     }
 
-    .section__shows__flex__info__text__button button a{
-        color:#E31F2C;
-        text-decoration: none;
-        font-size: 20px;
+     .container-show{
+        padding:10px;
+     }
 
-    }
 
-    .section__shows__flex{
-        display:flex;
-        justify-content:space-between;
-        background-color:#2B2B2B;
-        border-radius: 5px;
-    }
-
-    .section__shows__flex__map__map{
-        width: 100%;
-        height: 100%;
-        border-radius: 5px;
-    } */
 
     /* ------------------------------- index Shows ------------------------------- */
 
@@ -455,6 +426,14 @@ body{
         height: 80px;
         width: 100%;
         padding:0px 10px;
+    }
+    .disco{
+        color:#E31F2C;
+        font-size: 60px;
+        animation-name:spin;
+        animation-duration:10s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
     }
 
     /* ----------------- Spotify -------------------*/
@@ -513,28 +492,13 @@ body{
     }
 
     .integrantes__flex{
-        /* background-color: #E31F2C; */
-        color:#E31F2C;
-        display:flex;
-        justify-content: space-around;
-        border-radius: 5px;
-        border-color:#E31F2C;
-        border: 1px solid;
-        margin-top: 10px;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-
-    .integrantes__flex.inv{
-        background-color: #2B2B2B;
         color:white;
-        display:flex;
-        justify-content: space-around;
-        flex-direction: row-reverse;
         border-radius: 5px;
+        border: 1px solid #E31F2C;
         margin-top: 10px;
         margin-left: 10px;
         margin-right: 10px;
+        margin-bottom: 20px;
     }
 
     .integrantes__flex__img{
@@ -549,8 +513,9 @@ body{
     }
 
     .integrantes__flex__info{
-        flex:1;
-        margin:1%;
+        padding:20px;
+        flex-direction: column;
+
     }
 
     .integrantes__flex__info__nombre{
@@ -568,6 +533,34 @@ body{
         justify-content: center;
         font-size: 20px;
         margin-bottom: 30px;
+    }
+
+    .instruments{
+        list-style: none;
+        display:flex;
+        /* justify-content: center; */
+        justify-content: space-evenly;
+        padding:0;
+        margin:0;
+    }
+
+    .instruments-instrument{
+        color:gray;
+        display:inline-block;
+
+        font-size: 30px;
+        margin:10px 20px;
+    }
+
+    .bata{
+        width:100%;
+        text-align: center;
+        margin:0;
+    }
+
+    .instruments-instrument:hover{
+        color:#E31F2C;
+
     }
 
     .integrantes__flex__info__desc{
@@ -1000,7 +993,7 @@ body{
         box-shadow: 5px 5px rgba(227,31,44,0.2);
     }
 
-    .main__contacto__form__button__send:focus{
+    .main__contacto__form__button__send:active{
         box-shadow: none;
         position:relative;
         bottom:-5px;
@@ -1020,7 +1013,7 @@ body{
         box-shadow: 5px 5px rgba(0,0,0,0.2);
     }
 
-    .main__contacto__form__button__reset:focus{
+    .main__contacto__form__button__reset:active{
         box-shadow: none;
         position:relative;
         bottom:-5px;
@@ -1061,6 +1054,7 @@ body{
         align-content: center;
         width:100%;
         height: 80px;
+        z-index:99;
     }
 
     .header__icon{
@@ -1151,6 +1145,29 @@ body{
         width:auto;
     }
 
+    .social-insta, .social-face,.social-tube,.social-spoti{
+        color:gray;
+        font-size: 25px;
+    }
+
+    .social-insta:hover{
+        background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .social-face:hover{
+        color:#3b5998;
+    }
+
+    .social-tube:hover{
+        color:#c4302b;
+    }
+
+    .social-spoti:hover{
+        color:#1DB954;
+    }
+
     /* -------------------------------- FOOTER------------------------------*/
 
     /* -------------------------------- index y gral. tablet------------------------------*/
@@ -1201,7 +1218,7 @@ body{
         width:100%;
         height: auto;
         padding: 10px;
-        margin: 10px auto;
+        margin: 10px;
     }
         
     .section__shows-shows{
@@ -1213,6 +1230,8 @@ body{
         height: auto;
         padding: 10px;
     }
+
+
 
         /* ----------------- Prox. Shows tablet -------------------*/
 
@@ -1251,15 +1270,22 @@ body{
         gap: 10px;
         }
 
-    .integrantes__flex,.integrantes__flex.inv{
+    /* .integrantes__flex,.integrantes__flex.inv{
         flex-direction: column;
         margin:10px 20px;
-    }
+    } */
 
 
     .integrantes__flex{
         padding:10px;
         display:flex;
+        justify-content: center;
+    }
+
+    .integrantes__flex__info{
+        padding:10px;
+        display:flex;
+        flex-direction: column;
         justify-content: center;
     }
 
@@ -1356,7 +1382,8 @@ body{
                             "show"
                             "spotify"
                             "footer";
-        height: calc(100vh - 50px); 
+        width: 100%;
+        height: auto; 
     }
     /*---------------------- HEADER -----------------------------*/
     .header{
@@ -1369,6 +1396,7 @@ body{
         background-color: black;
         position: fixed;
         top:0;
+        z-index:99;
     }
 
     .header__icon{
@@ -1480,6 +1508,7 @@ body{
         justify-content: space-between;
         gap:10px;
         margin-left: 10px;
+        padding: 0;
     }
 
 
@@ -1494,12 +1523,39 @@ body{
 
     .footer__copy__text {
         font-weight: bold;
-        font-size: 15px;
+        font-size: 10px;
+    }
+
+    .footer__copy__text:hover{
+        color:#E31F2C;
     }
 
     .footer__redes__img{
         height: 20px;
         width:auto;
+    }
+
+    .social-insta, .social-face,.social-tube,.social-spoti{
+        color:gray;
+        font-size: 15px;
+    }
+
+    .social-insta:hover{
+        background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .social-face:hover{
+        color:#3b5998;
+    }
+
+    .social-tube:hover{
+        color:#c4302b;
+    }
+
+    .social-spoti:hover{
+        color:#1DB954;
     }
 
         /* ----------------- Principal Video -------------------*/
@@ -1561,6 +1617,7 @@ body{
         padding: 10px;
         }
 
+
     /* ----------------- Prox. Shows -------------------*/
 
     .spotify{
@@ -1577,6 +1634,10 @@ body{
     .spotify__reproductor{
         height: 80px;
         width: 100%;
+    }
+
+    .disco{
+        font-size: 20px;
     }
     
     /* ----------------- Prox. shows -------------------*/
@@ -1601,6 +1662,13 @@ body{
 
     .integrantes__flex,.integrantes__flex.inv{
         flex-direction: column;
+    }
+
+    .integrantes__flex__info{
+        padding:10px;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     .banda{
@@ -1645,6 +1713,17 @@ body{
         font-size: 10px;
         padding:10px;
     }
+
+    .bata{
+        font-size: 25px;
+    }
+
+    
+    .instruments-instrument{
+        font-size: 25px;
+    }
+
+                            
     /* -------------------------- Band Page -----------------------------*/ 
 
     /* -------------------------- Album Page -----------------------------*/ 
