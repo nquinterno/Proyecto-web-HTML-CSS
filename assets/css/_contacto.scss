@@ -1,0 +1,122 @@
+/* -------------------------------   Contacto --------------------------------------*/
+
+.contact-grid{
+    display:grid;
+    grid-template-areas:"header"
+                        "contacto"
+                        "footer";
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+    height: auto;
+
+    .main__contacto{
+        display: grid;
+        grid-area: contacto;
+        background-image: url(https://wc.wallpaperuse.com/wallp/9-99732_s.jpg);
+        width: 100%;
+        height: auto;
+        background-position: center;
+
+        .main__tittle{
+            color:$white;
+            text-decoration: none;
+            font-size:30px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .main__contacto-contacto{
+            display:flex;
+            justify-content: center;
+            height: auto;
+            width: 100%;
+            background-repeat:repeat;
+            align-items:top;
+
+            .main__contacto__form{
+                background-color: $dark-grey-05; /* ----- Color de fondo html #2B2B2B convertido a rgba y con trasparencia  -----*/
+                color:$rojo-div;
+                padding:10px;
+                border-radius: 5px;
+                height: max-content;
+                margin: 20px 0px;
+
+                .main__contacto__form__nombre, .main__contacto__form__mail, .main__contacto__form__destinatario, .main__contacto__form__cbox1, .main__contacto__form__comentarios, .main__contacto__form__enviar {
+                    padding-bottom:10px;
+                    display:flex;
+                    justify-content: space-between;
+                    margin:10px;
+                }
+
+                .main__contacto__form__nombre label, .main__contacto__form__mail label, .main__contacto__form__destinatario label{
+                    flex:1;
+                }
+                
+                .main__contacto__form__nombre input, .main__contacto__form__mail input, .main__contacto__form__destinatario select{
+                    flex:3;
+                    text-align: center;
+                }
+                
+                .main__contacto__form__comentarios textarea{
+                    width: 100%;
+                }
+
+                .main__contacto__form__mail{
+                    padding-bottom:1%;
+                }
+                
+                .main__contacto__form__button{
+                    display:flex;
+                    justify-content: space-between;
+                    margin:0.75vw;
+                }
+                
+                .main__contacto__form__button__send{
+                    padding:1px;
+                    background-color: $rojo-div-05; /* ----- Color de fondo html #E31F2C convertido a rgba y con trasparencia  -----*/
+                    border: 1px  solid;
+                    border-color: $rojo-div-05;
+                    border-radius: 5px;
+                    margin-top:1vw;
+                    color:$white;
+                    height: auto;
+                    width: 20%;
+                    font-weight: 700;
+                    box-shadow: 5px 5px rgba(227,31,44,0.2);
+                }
+                
+                .main__contacto__form__button__send:active{
+                    box-shadow: none;
+                    position:relative;
+                    bottom:-5px;
+                    right: -5px;
+                }
+                
+                .main__contacto__form__button__reset{
+                    padding:1px;
+                    background-color: rgba(255,255,255,0.5);
+                    border: 1px  solid;
+                    border-color: $white;
+                    border-radius: 5px;
+                    margin-top:1vw;
+                    color:$black;
+                    font-weight: 700;
+                    width: 20%;
+                    box-shadow: 5px 5px rgba(0,0,0,0.2);
+                }
+                
+                .main__contacto__form__button__reset:active{
+                    box-shadow: none;
+                    position:relative;
+                    bottom:-5px;
+                    right: -5px;
+                }
+                
+            }
+        
+        }
+    }
+
+}
+

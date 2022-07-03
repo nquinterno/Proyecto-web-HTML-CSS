@@ -1,0 +1,813 @@
+@media (max-width:990px) and (min-width:481px){
+
+/* -------------------------------- index y gral. tablet------------------------------*/
+
+    body{
+        width:99vw;
+        height:auto;
+    }
+    .sidel,.sider{
+        display:none;
+    }
+
+    /* -------------------------------- HEADER------------------------------*/
+
+    .header{
+        height:80px;
+        width: 100%;
+        margin: 0px;
+        padding: 10px;
+
+        .header__icon{
+            display:flex;
+            align-content: start;
+            height: 100%;
+            width:25%;
+            padding:5px 5px;
+
+            .header__icon__img{
+                height: 90%;
+                width:auto;}
+        }
+
+        .header__nav{
+            width:70%;
+            height: 100%;
+            // margin-right:40px;
+            border:none;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            
+
+            .header__nav__list{
+                display:flex;
+                width: 100%;
+                justify-content: space-between;
+                align-content:center;
+                margin:0px 0px;
+                padding: 0px;
+                    
+                 li{
+                    list-style: none;
+
+                     a{
+                        color:white;
+                        font-size:14px;
+                    }
+                }
+            }
+        }
+
+    }
+
+
+    /* -------------------------------- FOOTER------------------------------*/
+
+    .footer{
+        grid-area:footer;
+        width:100%;
+        height: 50px;
+        justify-self: center;
+        align-self: center;
+        padding: 0px 10px;
+
+        .footer-div{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 5px 5px;
+            background-color:#393939;
+            border: 2px solid;
+            border-color:gray;
+            border-radius: 5px;
+            height: 100%;
+            width: auto;
+
+            .footer-div__redes{
+                display:flex;
+                justify-content: space-between;
+                gap:10px;
+                margin-left: 10px;
+
+                li{
+                    list-style-type: none;
+                }
+            }
+
+            .footer-div__copy{
+                padding-right: 10px;
+                color:gray;
+
+                .footer__copy__text {
+                    font-weight: bold;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+    
+    .index-grid{
+        display:grid;
+        grid-template-areas:"header"
+                            "video"
+                            "show"
+                            "spotify"
+                            "footer";
+        height: auto;
+
+        /* ----------------- Principal Video tablet -------------------*/
+
+        .section__video{
+            grid-area:video;
+            display:flex;
+            align-content: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            max-width: 1080px;
+            padding-top: 10px;
+            margin:0px;
+            margin-top:40px;
+
+            .main__title{
+                color:white;
+                font-size: 25px;
+                text-align: center;
+                margin-top: 20px;
+            }
+        
+    
+            .section__video-video{
+                width: 100%;
+                height: 300px;
+            }
+        }
+
+        /* ----------------- Prox. Shows tablet -------------------*/
+
+        .section__shows{
+            grid-area:show;
+            display:flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            gap:10px;
+            width:100%;
+            height: auto;
+            padding: 10px;
+            // margin: 10px;
+    
+            .section__tittle{
+                font-size: 20px;
+                margin-top:20px;
+                margin-bottom:20px;
+            }
+    
+            .section__shows-shows{
+                display:flex;
+                justify-content: space-evenly;
+                flex-direction: row;
+                gap:10px;
+                width:100%;
+                height: auto;
+                padding: 10px;
+            }
+                    
+        }
+
+        /* ----------------- Spotify tablet -------------------*/
+
+        .spotify{
+            grid-area:spotify;
+            width:100%;
+            height: auto;
+            padding: 10px;
+    
+            .spotify .section__tittle {
+                display:none;
+            }
+    
+            .spotify__reproductor{
+                height: 80px;
+                width: 100%;
+            }
+        }  
+    
+    }
+        /* ----------------- Banda page tablet-------------------*/
+    .banda-grid{
+        display:grid;
+        justify-items:center;
+        align-items:center;
+        grid-template-areas:"header"
+                            "banda"
+                            "integrantes"
+                            "footer";
+        height: 100%;
+        width: 100%;
+        gap: 10px;
+
+        .banda{
+            grid-area:banda;
+            width:100%;
+            height: max-content;
+            margin-top:60px;
+    
+            .banda__tittle{
+            p{
+                font-size: 25px;} 
+            }
+    
+            .banda__text{
+                padding:10px;
+                font-size: 14px;
+            }
+    
+        }
+
+        .integrantes{
+            .section__tittle{
+                font-size: 25px;
+            }
+        
+            .integrantes__flex{
+                padding:10px;
+                display:flex;
+                justify-content: center;
+        
+                .integrantes__flex__info{
+                    padding:10px;
+                    display:flex;
+                    flex-direction: column;
+                    justify-content: center;
+        
+                    .integrantes__flex__info__nombre{
+                        font-size: 16px;
+                        margin-top:10px;
+                    }
+                    
+                    .integrantes__flex__info__instrumento{
+                        font-size: 16px;
+                    
+                    }
+                    
+                    .integrantes__flex__info__desc{
+                        font-size: 14px;
+                         padding:10px;
+                    }
+                }
+            }
+        
+        }
+          
+
+    }
+
+        
+        /* ----------------- Albumes page tablet -------------------*/
+
+    
+    .section__tittle{
+            font-size: 25px;
+    }
+        
+    .albumes__spotify-1{
+        display:none;
+    }
+        
+    .albumes__spotify-1 p{
+        display:none;
+    }
+
+    
+    .albumes__album, .albumes__año, .albumes__spotify, .albumes__spotify-1{
+        
+        p{
+            font-size:13px;
+            z-index:50;
+        }
+    }
+    .albumes__temas{
+        p{
+            font-size:13px;
+        }
+        ol{
+            li{
+                font-size:13px; 
+            }
+        }
+    }
+
+    
+
+        /* ----------------- Shows Page tablet -------------------*/
+
+
+    .Section__shows{
+        padding:10px;
+    
+    }
+    
+    .section__shows__flex{
+        .fecha{
+            font-size: 14px;} 
+    }
+    
+    .info{
+        font-size: 14px;
+    }
+    
+    .ticket a{
+        font-size: 14px;
+    }
+
+        
+    /* ----------------- Albumes Page tablet -------------------*/
+
+}
+
+
+
+
+/* ------------------------------------- NOBILE-------------------------------------------*/
+@media (max-width: 480px){
+    .sidel,.sider{
+        display:none;
+    }
+
+    .header{        
+        grid-area:header;
+        align-content: center;
+        height:60px;
+        width: 100%;
+        padding: 2px 2px;
+        margin: 0px 0px;
+        background-color: black;
+        position: fixed;
+        top:0;
+        z-index:99;
+
+        .header__icon{
+            display:flex;
+            justify-content:start;
+            align-content: center;
+            height:100%;
+            width: 50%;
+            padding: 5px 5px;
+            margin-left: 20px;
+
+            .header__icon__img{
+                width: 100px;
+                height:auto;
+                margin: 0px;
+            }
+        }
+
+        .header__nav{
+            border:0px;
+            width: 0px;
+            
+            .header__nav__list{
+                left:-100%;
+                position:fixed;
+                width: 100%;
+                height: calc(100vh - 50px);
+                top:50px;
+                background-color: black;
+                opacity:80%;
+                text-align: center;
+                text-decoration: none;
+                list-style: none;
+                transition: all 0.5s;
+                z-index:99;
+                display:flex;
+                flex-direction:column;
+
+                li {
+                    list-style-type:none;
+                    margin:00px 0px;
+                    line-height: 30px;
+                    z-index:99;
+
+                    a{
+                        text-decoration: none;
+                        font-weight: bold;
+                        font-size: 18px;
+                        color:#E31F2C;
+                        transition: all 0.5s;
+                        z-index:99;
+                    }
+                }
+
+                li a:hover {
+                    color:white;
+                }
+            
+
+            }
+        }
+
+        #check{
+            display:none;
+        }
+    
+        #check:checked ~ .header__nav ul{
+            left:0%;
+        }
+        .checkbtn{
+            display:inline-block;
+            color:#E31F2C;
+            font-size: 30px;
+            cursor:pointer;
+            margin:5px;
+            position: absolute;
+            right:20px;
+        }
+    
+        .lnr.lnr-menu{
+            color:#E31F2C;
+            font-size: 30px;
+        }
+    }
+
+    /*---------------------- FOOTER -----------------------------*/
+
+    .footer{
+        height: auto;
+
+        .footer-div{
+            display: flex;
+            align-items: center;
+            flex-direction:column;
+            padding:5px 0px;
+
+
+            .footer-div__redes{
+                display:flex;
+                justify-content: space-between;
+                gap:10px;
+                margin-left: 0px;
+                padding: 0px 0px;
+                padding-left: 0px;
+            }
+                
+        }
+    }
+
+    .index-grid{
+        display:grid;
+        grid-template-areas:"header"
+                            "video"
+                            "show"
+                            "spotify"
+                            "footer";
+        width: 100%;
+        height: auto;
+
+        /*---------------------- HEADER -----------------------------*/
+
+        
+            /* ----------------- Principal Video -------------------*/
+
+        .section__video{
+            .section__video-video{
+                width: 100%;
+                height: 300px;}
+        }
+
+        /* ----------------- Prox. Shows -------------------*/
+
+        .section__shows{
+            grid-area:show;
+            display:flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            gap:10px;
+            width:100%;
+            height: auto;
+            padding: 10px;
+            margin: 10px auto;
+    
+            .section__tittle{
+                font-size: 20px;
+                margin-top:10px;
+                margin-bottom:20px; 
+            }
+    
+            .section__shows-shows{
+                display:flex;
+                justify-content: space-evenly;
+                flex-direction: column;
+                gap:10px;
+                width:100%;
+                height: auto;
+                padding: 10px;
+
+                .section__shows__flex{
+                    p{
+                        font-size:12px;
+                    }
+                }
+                .section__shows__flex__info__fecha{
+                    p{
+                        font-size:12px;
+                    }
+                } 
+            }
+        }
+
+        .spotify{
+            grid-area:spotify;
+            width:100%;
+            height: auto;
+            padding: 10px;
+
+            .section__tittle{
+                display:none;
+                
+            }
+            .spotify__reproductor{
+                height: 80px;
+                width: 100%;
+            }
+            .disco{
+                font-size: 20px;
+            }
+        }
+    }
+
+    /* -------------------------- Band Page -----------------------------*/   
+
+    .banda-grid{
+        display:grid;
+        justify-items:center;
+        align-items:center;
+        grid-template-areas:"header"
+                            "banda"
+                            "integrantes"
+                            "footer";
+        height: 100%;
+        width: 100%;
+        gap: 10px;
+
+        .banda{
+            grid-area:banda;
+            width:100%;
+            height: max-content;
+            margin-top:60px;
+
+            .banda__img{
+                display:none;
+            }
+
+            .banda__tittle{
+                p{
+                font-size: 25px;} 
+                }
+            
+            .banda__text{
+                padding:10px;
+                font-size: 10px;
+            }
+            
+        }
+
+        .integrantes{
+            grid-area:integrantes;
+            width:100%;
+            height: max-content;
+
+            .section__tittle{
+                font-size: 25px;
+            }
+
+            .integrantes__flex,.integrantes__flex.inv{
+                flex-direction: column;
+    
+                .integrantes__flex__info{
+                    padding:10px;
+                    display:flex;
+                    flex-direction: column;
+                    justify-content: center;
+
+                    .integrantes__flex__info__nombre{
+                        font-size: 16px;
+                        margin-top:10px;
+                
+                    }
+                
+                    .integrantes__flex__info__instrumento{
+                        font-size: 12px;
+                
+                    }
+                
+                    .integrantes__flex__info__desc{
+                        font-size: 10px;
+                        padding:10px;
+                    }
+                
+                    .bata{
+                        font-size: 25px;
+                    }
+                
+                    .instruments-instrument{
+                        font-size: 25px;
+                    }
+                }
+            }
+        }
+    
+    }
+
+    /* -------------------------- Album Page -----------------------------*/ 
+    .section__tittle{
+        /* margin-top:80px; */
+        font-size: 25px;
+    }
+
+    .albumes__spotify-1{
+        display:none;
+    }
+
+    .albumes__spotify-1 p{
+        display:none;
+    }
+
+    .albumes__album, .albumes__año, .albumes__spotify, .albumes__spotify-1{
+        
+        p{
+            font-size:10px;
+            z-index:50;
+        }
+    }
+    .albumes__temas{
+        p{
+            font-size:10px;
+        }
+        ol{
+            li{
+                font-size:10px; 
+            }
+        }
+    }
+
+    /* -------------------------- Shows Page -----------------------------*/
+
+    .shows{
+        .section__tittle{
+            margin-top:80px;            
+        }
+    
+        .section__shows__flex{
+            .fecha{
+                font-size: 12px;}
+        }
+    
+        .info{
+            font-size: 12px;
+        }
+    
+        .ticket{
+            a{
+                font-size: 10px;}
+        }
+    }
+   
+
+        /* -------------------------- Contact Page -----------------------------*/   
+    .contact-grid{
+            display:grid;
+            grid-template-areas:"header"
+                                "contacto"
+                                "footer";
+            align-items: center;
+            justify-items: center;
+            width: 100%;
+            height: auto;
+    
+        .main__contacto{
+            display: grid;
+            grid-area: contacto;
+            background-image: url(https://wc.wallpaperuse.com/wallp/9-99732_s.jpg);
+            width: 100%;
+            height: auto;
+            background-position: center;
+
+            .main__title{
+                font-size: 20px;
+                color: #fff;
+                margin-top:60px;
+                text-align: center;
+            }
+        
+            .main__contacto-contacto{
+                display:flex;
+                justify-content: center;
+                height:calc(100vh - 50px);
+                 width: 100%;
+                background-repeat:repeat;
+                align-items:top;
+        
+                .main__contacto__form{
+                    background-color: rgba(43,43,43,0.6); /* ----- Color de fondo html #2B2B2B convertido a rgba y con trasparencia  -----*/
+                    color:#E31F2C;
+                    padding:2px;
+                    border-radius: 5px;
+                    height: max-content;
+                    margin: 20px 0px;
+        
+                    .main__contacto__form__nombre, .main__contacto__form__mail, .main__contacto__form__destinatario, .main__contacto__form__cbox1, .main__contacto__form__comentarios, .main__contacto__form__enviar {
+                            padding-bottom:10px;
+                            display:flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            margin:2px;
+                            align-items: center;
+                    }
+        
+                    .main__contacto__form__nombre label, .main__contacto__form__mail label, .main__contacto__form__destinatario label{
+                            flex:1;
+                    }
+        
+                    .main__contacto__form__nombre,.main__contacto__form__mail,.main__contacto__form__destinatario{
+                            input{
+                                flex:3;
+                                text-align: center;
+                                width: 80%;
+                        }
+                    }
+                    
+                    .main__contacto__form__destinatario{
+                        select{
+                                flex:3;
+                                text-align: center;
+                                width: 80%;
+                    
+                        }
+                    
+                        .main__contacto__form__comentarios{
+                                textarea{
+                                width: 80%;}      
+                        }
+                        
+                        .main__contacto__form__mail{
+                                padding-bottom:1%;
+                        }
+                    }
+                    
+                    .main__contacto__form__button{
+                            display:flex;
+                            justify-content: space-between;
+                            margin:0.75vw;
+                    
+                        .main__contacto__form__button__send{
+                                padding:1px;
+                                background-color: rgba(227,31,44,0.5); /* ----- Color de fondo html #E31F2C convertido a rgba y con trasparencia  -----*/
+                                border: 1px  solid;
+                                border-color: rgba(227,31,44,0.5);
+                                border-radius: 5px;
+                                margin-top:1vw;
+                                color:white;
+                                height: auto;
+                                width: 20%;
+                                font-weight: 700;
+                                box-shadow: 5px 5px rgba(227,31,44,0.2);
+                        }
+                    
+                        .main__contacto__form__button__send:focus{
+                    
+                                box-shadow: none;
+                                position:relative;
+                                bottom:-5px;
+                                right: -5px;
+                        }
+                    
+                        .main__contacto__form__button__reset{
+                                padding:1px;
+                                background-color: rgba(255,255,255,0.5);
+                                border: 1px  solid;
+                                border-color: white;
+                                border-radius: 5px;
+                                margin-top:1vw;
+                                color:black;
+                                font-weight: 700;
+                                width: 20%;
+                                box-shadow: 5px 5px rgba(0,0,0,0.2);
+                        }
+                    
+                        .main__contacto__form__button__reset:focus{
+                            box-shadow: none;
+                             position:relative;
+                            bottom:-5px;
+                            right: -5px;
+                        }
+                    }
+        
+                }
+            
+            }
+        
+        }
+    }
+}
+

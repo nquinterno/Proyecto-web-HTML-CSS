@@ -1,0 +1,174 @@
+
+/* -------------------------- General Config ---------------------------------*/
+body{
+    background-color:black;
+    width: 99vw;
+    height: auto;
+}
+
+.section {
+    background-color:black;
+}
+
+.section__tittle{
+    color:white;
+    text-decoration: none;
+    font-size:30px;
+    text-align: center;
+    margin-top:40px;
+    margin-bottom:20px;
+}
+#check{
+    display:none;
+}
+
+.checkbtn{
+    display:none;
+}
+
+
+/* ----------------------- Header Gral. --------------------------------*/
+
+.header{
+    grid-area:header;
+    background-color: black;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    position:sticky;
+    top:0;
+    /* margin:10px 10px; */
+    width: 100%;
+    height: 60px;
+    padding: 10px 20px;
+    z-index:99;
+
+    .header__icon{
+        grid-area:icon;
+        display:flex;
+        justify-content: center;
+        align-content: center;
+        width: 20%;
+        height: auto;
+        margin: 10px;
+
+        .header__icon__img{
+            width: 70%;
+            height:auto;
+        }
+    }
+
+    .header__nav{
+        /* /* display: flex; */
+        align-items: center;
+        justify-items: center;
+        border: 2px solid;
+        border-color: #E31F2C;
+        background-color: black;
+        z-index: 0;
+        padding: 10px 0px;
+        margin: 0 10px;
+        width: 70%;
+        height: auto;
+
+        .header__nav__list{
+            display:flex;
+            justify-content: space-around;
+            margin-bottom:0px;
+
+            li{
+                list-style-type:none;
+                display:inline;
+                margin-bottom:0px;
+                a{
+                    color:white;
+                    text-decoration: none;
+                    font-weight: bold;
+                    font-size: 20px;
+                }
+            }
+            
+        }
+    }
+    
+}
+
+/* ----------------------- Footer Gral--------------------------------*/
+
+.footer{
+    grid-area:footer;
+    width:100%;
+    height: 70px;
+    /* justify-self: center; */
+    align-self: center;
+    padding: 0px 10px;
+    /* display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+    background-color:#393939; */
+    /* border-radius: 5px; */
+
+    .footer-div{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        /* margin-right: 50px; */
+        margin: 15px 10px;
+        background-color:#393939;
+        border: 2px solid;
+        border-color:gray;
+        border-radius: 5px;
+        height: 100%;
+        width: auto;
+        .footer-div__redes{
+            display:flex;
+            justify-content: space-between;
+            gap:20px;
+            margin-left: 10px;
+            margin-bottom: 0px;
+            li{
+                list-style-type: none;
+                /* display: inline-block; */
+            }
+        }
+        .footer-div__copy{
+            margin-right: 20px;
+            color:gray;
+
+            .footer__copy__text {
+                font-weight: bold;
+                margin-bottom: 0px;
+            }
+            .footer__copy__text:hover {
+                color:#E31F2C;
+            }
+        
+        }
+    }
+
+    
+.social-insta, .social-face,.social-tube,.social-spoti{
+    color:gray;
+    font-size: 40px;
+}
+
+.social-insta:hover{
+    background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.social-face:hover{
+    color:#3b5998;
+}
+
+.social-tube:hover{
+    color:#c4302b;
+}
+
+.social-spoti:hover{
+    color:#1DB954;
+}
+
+}

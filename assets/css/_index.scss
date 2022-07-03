@@ -1,0 +1,165 @@
+    /* ----------------- Grid -------------------*/
+
+.index-grid{
+    display:grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-areas:" header"
+                        " video"
+                        " show"
+                        " spotify"
+                        "footer"
+                        ;
+    height: auto;
+    width: 100%;
+    gap: 10px;
+}
+  
+    /* ----------------- Principal Video -------------------*/
+
+    .section__video{
+        grid-area:video;
+        display:flex;
+        align-content: center;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        max-width: 1080px;
+        padding: 10px;
+        margin: 10px;
+        margin-top:50px;
+     }
+
+    /* .section__video-video{
+        width: 100%;
+        height: 600px;
+    }  */
+
+    .section__video-video{
+        width: 100%;
+        max-width: 1080px;
+        height: 600px;
+    // .section__video-video iframe{
+    //     width: 100%;
+    //     max-width: 1080px;
+    //     height: 100%;
+    // }
+    }
+    
+    /* ----------------- Principal Video -------------------*/
+
+    /* ----------------- Prox Shows -------------------*/
+
+    .section__shows{
+        grid-area:show;
+        padding:10px;
+        margin: 0;
+        width:100%;
+
+        .container-show{
+            padding:10px;
+
+            .ticket-icon{
+                i{
+                color:$yellow;} 
+             }
+        
+
+            .section__shows__flex{
+                position: relative;
+                padding-bottom: 0;
+    
+                p{
+                    font-size: 16px;
+                }
+    
+                .section__shows__flex__info__fecha{
+                    /* background-color: black; */
+                    border: 2px solid $rojo-div;
+                    border-radius:5px;
+                    width: max-content;
+                    padding: 10px;
+                    color:$white;
+                    font-weight: 600;
+                    text-align: center;  
+                    position: relative;      
+                }
+
+                .section__shows__flex__info__text__button{
+
+                    button{
+                        width:max-content;
+                        background-color: $black;
+                        color:$white;
+                        border-radius: 5px;
+                        border:2px solid $rojo-div;
+                        position: relative;
+                        
+                        a{
+                        color:$white;}
+
+                        a:hover{
+                            color:$black;}
+                    }
+            
+                    button:hover{
+                        background-color: $rojo-div;
+                        color:$black;}
+                }
+                
+                .section__shows__flex__info__text{
+                    p{
+                    color:$white;
+                    position: relative;} 
+                }
+                .section__shows__flex__map{
+                    margin: 0;
+                }
+             
+            }
+        
+            .section__shows__flex::before{
+                content:"";
+                background-image:url(https://images.unsplash.com/photo-1532622286598-f87b4290fe22?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);
+                opacity: 0.5;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                left: 0;
+                top: 0;
+                bottom:0;
+                right:0;
+                position: absolute;
+                z-index:-1;
+            }
+         }
+
+    }
+
+
+
+
+    /* ----------------- Spotify -------------------*/
+    .spotify{
+        grid-area:spotify;
+        height: auto;
+        width: 100%;
+        padding: 10px 10px;
+
+        .spotify__reproductor{
+            height: 80px;
+            width: 100%;
+            padding:0px 10px;
+        }
+
+        .disco{
+            color:$rojo-div;
+            font-size: 60px;
+            animation-name:spin;
+            animation-duration:10s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+    
+    }
+    /* ----------------- Spotify -------------------*/

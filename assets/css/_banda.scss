@@ -1,0 +1,146 @@
+/* -------------------------------   Banda --------------------------------------*/
+
+.banda-grid{
+    display:grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-areas:"header"
+                        "banda"
+                        "integrantes"
+                        "footer"
+                        ;
+    height: auto;
+    width: 100%;
+    gap: 10px;
+
+    .banda{
+        grid-area: banda;
+        width: 100%;
+        height: auto;
+        margin:10px 0px;
+
+        .banda__tittle{
+            p{
+                color: $white;
+                font-size: 30px;
+                text-align: center;} 
+        }
+        
+        .banda__text{
+            p{
+                color:$white;
+                text-align: justify;
+                padding:10px;} 
+        }
+        
+        .banda__img{ 
+            img{
+            padding: 10px;
+            width: 100%;}
+        }
+    
+    }
+
+    .integrantes{
+        grid-area: integrantes;
+        width: 100%;
+        height: auto;
+
+        .integrantes__flex{
+            color:$white;
+            border-radius: 5px;
+            border: 1px solid $rojo-div;
+            margin-top: 10px;
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .integrantes__flex__img{
+            width:100;
+            flex:1;
+            margin:10px;
+        
+            img{
+                border-radius: 10px;}
+        }
+        
+        
+        .integrantes__flex__info{
+            padding:20px;
+            flex-direction: column;
+        
+            .integrantes__flex__info__nombre{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 25px;
+                text-decoration: underline;
+                margin-bottom: 30px;
+            }
+        
+            .integrantes__flex__info__desc{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        
+            .integrantes__flex__info__instrumento{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 20px;
+                margin-bottom: 30px;
+            }
+        
+            .instruments{
+                list-style: none;
+                display:flex;
+                /* justify-content: center; */
+                justify-content: space-evenly;
+                padding:0;
+                margin:0;
+        
+            }
+        
+            .instruments-instrument{
+                color:$ligth-grey;
+                display:inline-block;
+            
+                font-size: 30px;
+                margin:10px 20px;
+            }
+        
+            .instruments-instrument:hover{
+                color:$rojo-div;
+            
+            }
+        
+            .bata{
+                width:100%;
+                text-align: center;
+                margin:0;
+            }
+            
+        }
+    
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------------------   Banda --------------------------------------*/
