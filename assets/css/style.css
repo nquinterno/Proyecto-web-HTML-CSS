@@ -1,5 +1,4 @@
 @charset "UTF-8";
-/*-------------------  Reset  -------------------------*/
 /*-------------  Colores  ---------------*/
 /*-------------------  Reset    -------------------------*/
 * {
@@ -100,7 +99,7 @@ body {
   top: 0;
   /* margin:10px 10px; */
   width: 100%;
-  height: 60px;
+  height: 80px;
   padding: 10px 20px;
   z-index: 99;
 }
@@ -150,17 +149,19 @@ body {
 /* ----------------------- Footer Gral--------------------------------*/
 .footer {
   grid-area: footer;
-  width: 100%;
   height: 70px;
-  /* justify-self: center; */
+  width: 100%;
+  padding: 10px;
+  margin: 10px;
   align-self: center;
-  padding: 0px 10px;
+  margin-top: 50px;
   /* display: flex;
   align-items: center;
   justify-content: space-between;
   margin: 10px 0;
   background-color:#393939; */
   /* border-radius: 5px; */
+  /* justify-self: center; */
 }
 .footer .footer-div {
   display: flex;
@@ -234,10 +235,10 @@ body {
   align-content: center;
   justify-content: center;
   width: 100%;
-  height: auto;
-  max-width: 1080px;
   padding: 10px;
   margin: 10px;
+  height: auto;
+  max-width: 1080px;
   margin-top: 50px;
 }
 
@@ -246,18 +247,23 @@ body {
     height: 600px;
 }  */
 .section__video-video {
-  width: 100%;
   max-width: 1080px;
   height: 600px;
+  width: 100%;
+  padding: 10px;
+  margin: 10px;
+  padding: 0px;
+  margin: 0px;
 }
 
 /* ----------------- Principal Video -------------------*/
 /* ----------------- Prox Shows -------------------*/
 .section__shows {
   grid-area: show;
-  padding: 10px;
-  margin: 0;
   width: 100%;
+  padding: 10px;
+  margin: 10px;
+  margin: 0;
 }
 .section__shows .container-show {
   padding: 10px;
@@ -332,7 +338,8 @@ body {
   grid-area: spotify;
   height: auto;
   width: 100%;
-  padding: 10px 10px;
+  padding: 10px;
+  margin: 10px;
 }
 .spotify .spotify__reproductor {
   height: 80px;
@@ -365,9 +372,10 @@ body {
 }
 .banda-grid .banda {
   grid-area: banda;
-  width: 100%;
   height: auto;
-  margin: 10px 0px;
+  width: 100%;
+  padding: 10px;
+  margin: 10px;
 }
 .banda-grid .banda .banda__tittle p {
   color: #FAFAFA;
@@ -380,8 +388,9 @@ body {
   padding: 10px;
 }
 .banda-grid .banda .banda__img img {
-  padding: 10px;
   width: 100%;
+  padding: 10px;
+  margin: 10px;
 }
 .banda-grid .integrantes {
   grid-area: integrantes;
@@ -398,9 +407,10 @@ body {
   margin-bottom: 20px;
 }
 .banda-grid .integrantes .integrantes__flex__img {
-  width: 100;
-  flex: 1;
+  width: 100%;
+  padding: 10px;
   margin: 10px;
+  flex: 1;
 }
 .banda-grid .integrantes .integrantes__flex__img img {
   border-radius: 10px;
@@ -538,19 +548,75 @@ body {
 }
 .shows-grid .shows {
   grid-area: shows;
+  justify-content: center;
 }
-.shows-grid .shows .section__shows-shows {
+.shows-grid .shows .calendar {
+  width: 100%;
+}
+.shows-grid .shows .calendar .carousel-control-prev {
+  width: 5%;
+}
+.shows-grid .shows .calendar .carousel-control-next {
+  width: 5%;
+}
+.shows-grid .shows .calendar .month-tittle {
+  display: flex;
+  justify-content: center;
+  color: #E31F2C;
+}
+.shows-grid .shows .calendar .month {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
   padding: 10px;
 }
-.shows-grid .shows .section__shows-shows .section__shows__flex {
+.shows-grid .shows .calendar .month li {
+  display: flex;
+  justify-content: center;
+  color: #E31F2C;
+}
+.shows-grid .shows .calendar .month .day-show {
+  background-color: #E31F2C;
+  border-radius: 5px;
+  margin: 10px;
+}
+.shows-grid .shows .calendar .month .day-show a {
+  color: #191919;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+}
+.shows-grid .shows .calendar .month .day-tittle {
+  color: #E31F2C;
+  font-weight: 600;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #E31F2C;
+  margin: 10px;
+  padding: 10px;
+}
+.shows-grid .shows .august .first-day {
+  grid-column-start: 2;
+}
+.shows-grid .shows .september .first-day {
+  grid-column-start: 5;
+}
+.shows-grid .shows .october .first-day {
+  grid-column-start: 7;
+}
+
+.section__shows__flex {
+  padding: 10px;
   position: relative;
   padding-bottom: 0;
+  z-index: 1;
 }
-.shows-grid .shows .section__shows-shows .section__shows__flex p {
-  font-size: 12px;
+.section__shows__flex .section__shows__flex__info {
+  padding: 0px 20px;
 }
-.shows-grid .shows .section__shows-shows .section__shows__flex .section__shows__flex__info__fecha {
-  /* background-color: black; */
+.section__shows__flex .section__shows__flex__info .section__shows__flex__info__fecha {
+  background-color: #191919;
   border: 2px solid #E31F2C;
   border-radius: 5px;
   width: -webkit-max-content;
@@ -561,8 +627,9 @@ body {
   font-weight: 600;
   text-align: center;
   position: relative;
+  z-index: 1;
 }
-.shows-grid .shows .section__shows-shows .section__shows__flex .section__shows__flex__info__text__button button {
+.section__shows__flex .section__shows__flex__info__text__button button {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
@@ -572,30 +639,33 @@ body {
   border: 2px solid #E31F2C;
   position: relative;
 }
-.shows-grid .shows .section__shows-shows .section__shows__flex .section__shows__flex__info__text__button button a {
+.section__shows__flex .section__shows__flex__info__text__button button a {
   color: #FAFAFA;
 }
-.shows-grid .shows .section__shows-shows .section__shows__flex .section__shows__flex__info__text__button button a:hover {
+.section__shows__flex .section__shows__flex__info__text__button button a:hover {
   color: #191919;
 }
-.shows-grid .shows .section__shows-shows .section__shows__flex .section__shows__flex__info__text__button button:hover {
+.section__shows__flex .section__shows__flex__info__text__button button:hover {
   background-color: #E31F2C;
   color: #191919;
 }
-.shows-grid .shows .section__shows-shows .section__shows__flex .section__shows__flex__info__text {
-  width: 80%;
-}
-.shows-grid .shows .section__shows-shows .section__shows__flex .section__shows__flex__info__text p {
+.section__shows__flex .section__shows__flex__info__text p {
   color: #FAFAFA;
   position: relative;
+  z-index: 1;
+  font-size: 16px;
+  background-color: rgba(25, 25, 25, 0.5);
 }
-.shows-grid .shows .section__shows-shows .section__shows__flex .section__shows__flex__map {
+.section__shows__flex .section__shows__flex__map {
   margin: 0;
+  position: relative;
+  z-index: 1;
 }
-.shows-grid .shows .section__shows-shows .section__shows__flex::before {
+
+.section__shows__flex::before {
   content: "";
   background-image: url(https://images.unsplash.com/photo-1532622286598-f87b4290fe22?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);
-  opacity: 0.5;
+  opacity: 0.9;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -606,14 +676,31 @@ body {
   position: absolute;
   z-index: -1;
 }
-.shows-grid .galery-master {
+
+.galery-master {
   grid-area: galery-master;
   width: 100%;
   height: auto;
 }
-.shows-grid .galery-master .epigrafe_galeria:hover {
+.galery-master .epigrafe_galeria:hover {
   background-color: rgba(43, 43, 43, 0.5);
   color: #FAFAFA;
+}
+.galery-master .carousel-boton {
+  width: 5%;
+}
+.galery-master .carousel-item {
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.galery-master .carousel-item .galery-img {
+  transition: 0.5s;
+  z-index: 100;
+}
+.galery-master .carousel-item .galery-img:hover {
+  transform: scale(1.25, 1.25);
+  filter: drop-shadow(10px 10px 10px #E31F2C);
 }
 
 /* -------------------------------   Shows --------------------------------------*/
@@ -625,6 +712,7 @@ body {
   justify-items: center;
   width: 100%;
   height: auto;
+  min-height: 100vh;
 }
 .contact-grid .main__contacto {
   display: grid;
@@ -650,8 +738,7 @@ body {
   align-items: top;
 }
 .contact-grid .main__contacto .main__contacto-contacto .main__contacto__form {
-  background-color: rgba(57, 57, 57, 0.5);
-  /* ----- Color de fondo html #2B2B2B convertido a rgba y con trasparencia  -----*/
+  background-color: rgba(57, 57, 57, 0.5); /* ----- Color de fondo html #2B2B2B convertido a rgba y con trasparencia  -----*/
   color: #E31F2C;
   padding: 10px;
   border-radius: 5px;
@@ -686,8 +773,7 @@ body {
 }
 .contact-grid .main__contacto .main__contacto-contacto .main__contacto__form .main__contacto__form__button__send {
   padding: 1px;
-  background-color: rgba(227, 31, 44, 0.5);
-  /* ----- Color de fondo html #E31F2C convertido a rgba y con trasparencia  -----*/
+  background-color: rgba(227, 31, 44, 0.5); /* ----- Color de fondo html #E31F2C convertido a rgba y con trasparencia  -----*/
   border: 1px solid;
   border-color: rgba(227, 31, 44, 0.5);
   border-radius: 5px;
@@ -729,11 +815,9 @@ body {
     width: 99vw;
     height: auto;
   }
-
   .sidel, .sider {
     display: none;
   }
-
   /* -------------------------------- HEADER------------------------------*/
   .header {
     height: 80px;
@@ -775,7 +859,6 @@ body {
     color: white;
     font-size: 14px;
   }
-
   /* -------------------------------- FOOTER------------------------------*/
   .footer {
     grid-area: footer;
@@ -814,7 +897,6 @@ body {
     font-weight: bold;
     font-size: 15px;
   }
-
   .index-grid {
     display: grid;
     grid-template-areas: "header" "video" "show" "spotify" "footer";
@@ -882,7 +964,6 @@ body {
     height: 80px;
     width: 100%;
   }
-
   /* ----------------- Banda page tablet-------------------*/
   .banda-grid {
     display: grid;
@@ -933,49 +1014,39 @@ body {
     font-size: 14px;
     padding: 10px;
   }
-
   /* ----------------- Albumes page tablet -------------------*/
   .section__tittle {
     font-size: 25px;
   }
-
   .albumes__spotify-1 {
     display: none;
   }
-
   .albumes__spotify-1 p {
     display: none;
   }
-
   .albumes__album p, .albumes__año p, .albumes__spotify p, .albumes__spotify-1 p {
     font-size: 13px;
     z-index: 50;
   }
-
   .albumes__temas p {
     font-size: 13px;
   }
   .albumes__temas ol li {
     font-size: 13px;
   }
-
   /* ----------------- Shows Page tablet -------------------*/
   .Section__shows {
     padding: 10px;
   }
-
   .section__shows__flex .fecha {
     font-size: 14px;
   }
-
   .info {
     font-size: 14px;
   }
-
   .ticket a {
     font-size: 14px;
   }
-
   /* ----------------- Albumes Page tablet -------------------*/
 }
 /* ------------------------------------- NOBILE-------------------------------------------*/
@@ -983,7 +1054,6 @@ body {
   .sidel, .sider {
     display: none;
   }
-
   .header {
     grid-area: header;
     align-content: center;
@@ -1066,7 +1136,6 @@ body {
     color: #E31F2C;
     font-size: 30px;
   }
-
   /*---------------------- FOOTER -----------------------------*/
   .footer {
     height: auto;
@@ -1085,7 +1154,6 @@ body {
     padding: 0px 0px;
     padding-left: 0px;
   }
-
   .index-grid {
     display: grid;
     grid-template-areas: "header" "video" "show" "spotify" "footer";
@@ -1130,6 +1198,9 @@ body {
   .index-grid .section__shows .section__shows-shows .section__shows__flex__info__fecha p {
     font-size: 12px;
   }
+  .index-grid .section__shows .section__shows-shows .section__shows__flex__info__fecha .section__shows__flex__info__text p {
+    font-size: 12px;
+  }
   .index-grid .spotify {
     grid-area: spotify;
     width: 100%;
@@ -1146,7 +1217,6 @@ body {
   .index-grid .spotify .disco {
     font-size: 20px;
   }
-
   /* -------------------------- Band Page -----------------------------*/
   .banda-grid {
     display: grid;
@@ -1211,47 +1281,40 @@ body {
   .banda-grid .integrantes .integrantes__flex .integrantes__flex__info .instruments-instrument, .banda-grid .integrantes .integrantes__flex.inv .integrantes__flex__info .instruments-instrument {
     font-size: 25px;
   }
-
   /* -------------------------- Album Page -----------------------------*/
   .section__tittle {
     /* margin-top:80px; */
     font-size: 25px;
   }
-
   .albumes__spotify-1 {
     display: none;
   }
-
   .albumes__spotify-1 p {
     display: none;
   }
-
   .albumes__album p, .albumes__año p, .albumes__spotify p, .albumes__spotify-1 p {
     font-size: 10px;
     z-index: 50;
   }
-
   .albumes__temas p {
     font-size: 10px;
   }
   .albumes__temas ol li {
     font-size: 10px;
   }
-
   /* -------------------------- Shows Page -----------------------------*/
-  .shows .section__tittle {
+  .shows-grid .shows .section__tittle {
     margin-top: 80px;
   }
-  .shows .section__shows__flex .fecha {
+  .shows-grid .shows .section__shows-shows .section__shows__flex__info__fecha p {
     font-size: 12px;
   }
-  .shows .info {
+  .shows-grid .shows .section__shows-shows .section__shows__flex__info__text p {
     font-size: 12px;
   }
-  .shows .ticket a {
+  .shows-grid .ticket a {
     font-size: 10px;
   }
-
   /* -------------------------- Contact Page -----------------------------*/
   .contact-grid {
     display: grid;
@@ -1284,8 +1347,7 @@ body {
     align-items: top;
   }
   .contact-grid .main__contacto .main__contacto-contacto .main__contacto__form {
-    background-color: rgba(43, 43, 43, 0.6);
-    /* ----- Color de fondo html #2B2B2B convertido a rgba y con trasparencia  -----*/
+    background-color: rgba(43, 43, 43, 0.6); /* ----- Color de fondo html #2B2B2B convertido a rgba y con trasparencia  -----*/
     color: #E31F2C;
     padding: 2px;
     border-radius: 5px;
@@ -1328,8 +1390,7 @@ body {
   }
   .contact-grid .main__contacto .main__contacto-contacto .main__contacto__form .main__contacto__form__button .main__contacto__form__button__send {
     padding: 1px;
-    background-color: rgba(227, 31, 44, 0.5);
-    /* ----- Color de fondo html #E31F2C convertido a rgba y con trasparencia  -----*/
+    background-color: rgba(227, 31, 44, 0.5); /* ----- Color de fondo html #E31F2C convertido a rgba y con trasparencia  -----*/
     border: 1px solid;
     border-color: rgba(227, 31, 44, 0.5);
     border-radius: 5px;

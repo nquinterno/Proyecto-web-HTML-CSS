@@ -512,7 +512,13 @@
                     p{
                         font-size:12px;
                     }
-                } 
+
+                    .section__shows__flex__info__text{
+                        p{
+                            font-size:12px;
+                        }
+                    } 
+                }
             }
         }
 
@@ -653,23 +659,41 @@
 
     /* -------------------------- Shows Page -----------------------------*/
 
-    .shows{
-        .section__tittle{
-            margin-top:80px;            
-        }
-    
-        .section__shows__flex{
-            .fecha{
-                font-size: 12px;}
-        }
-    
-        .info{
-            font-size: 12px;
+    .shows-grid{
+        .shows{
+            .section__tittle{
+                margin-top:80px;            
+            }
+
+            .section__shows-shows{
+
+                .section__shows__flex{
+                    &__info{
+                        &__fecha{
+                            p{
+                                font-size: 12px;
+                            }
+                        }
+
+                        &__text{
+                            p{
+                                font-size:12px;
+                            }
+                            
+                        }
+
+                    }
+
+                }
+
+            }
+        
+        
         }
     
         .ticket{
             a{
-                font-size: 10px;}
+            font-size: 10px;}
         }
     }
    
@@ -810,4 +834,3 @@
         }
     }
 }
-

@@ -15,9 +15,9 @@
 
     .banda{
         grid-area: banda;
-        width: 100%;
         height: auto;
-        margin:10px 0px;
+        @include box;
+        
 
         .banda__tittle{
             p{
@@ -35,8 +35,8 @@
         
         .banda__img{ 
             img{
-            padding: 10px;
-            width: 100%;}
+                @include box;
+            }
         }
     
     }
@@ -57,9 +57,8 @@
         }
         
         .integrantes__flex__img{
-            width:100;
+            @include box;
             flex:1;
-            margin:10px;
         
             img{
                 border-radius: 10px;}
