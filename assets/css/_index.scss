@@ -28,10 +28,6 @@
         margin-top:50px;
      }
 
-    /* .section__video-video{
-        width: 100%;
-        height: 600px;
-    }  */
 
     .section__video-video{
         max-width: 1080px;
@@ -39,11 +35,6 @@
         @include box;
         padding:0px;
         margin:0px;
-    // .section__video-video iframe{
-    //     width: 100%;
-    //     max-width: 1080px;
-    //     height: 100%;
-    // }
     }
     
     /* ----------------- Principal Video -------------------*/
@@ -73,7 +64,6 @@
                 }
     
                 .section__shows__flex__info__fecha{
-                    /* background-color: black; */
                     border: 2px solid $rojo-div;
                     border-radius:5px;
                     width: max-content;

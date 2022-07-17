@@ -5,8 +5,7 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-*,
-*::after, *::before {
+*, *::after, *::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -97,7 +96,6 @@ body {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  /* margin:10px 10px; */
   width: 100%;
   height: 80px;
   padding: 10px 20px;
@@ -117,7 +115,6 @@ body {
   height: auto;
 }
 .header .header__nav {
-  /* /* display: flex; */
   align-items: center;
   justify-items: center;
   border: 2px solid;
@@ -155,25 +152,17 @@ body {
   margin: 10px;
   align-self: center;
   margin-top: 50px;
-  /* display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 10px 0;
-  background-color:#393939; */
-  /* border-radius: 5px; */
-  /* justify-self: center; */
 }
 .footer .footer-div {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* margin-right: 50px; */
   margin: 15px 10px;
   background-color: #393939;
   border: 2px solid;
   border-color: gray;
   border-radius: 5px;
-  height: 100%;
+  height: 70px;
   width: auto;
 }
 .footer .footer-div .footer-div__redes {
@@ -185,7 +174,6 @@ body {
 }
 .footer .footer-div .footer-div__redes li {
   list-style-type: none;
-  /* display: inline-block; */
 }
 .footer .footer-div .footer-div__copy {
   margin-right: 20px;
@@ -198,7 +186,7 @@ body {
 .footer .footer-div .footer-div__copy .footer__copy__text:hover {
   color: #E31F2C;
 }
-.footer .social-insta, .footer .social-face, .footer .social-tube, .footer .social-spoti {
+.footer .social, .footer .social-spoti, .footer .social-tube, .footer .social-face, .footer .social-insta {
   color: gray;
   font-size: 40px;
 }
@@ -242,10 +230,6 @@ body {
   margin-top: 50px;
 }
 
-/* .section__video-video{
-    width: 100%;
-    height: 600px;
-}  */
 .section__video-video {
   max-width: 1080px;
   height: 600px;
@@ -279,7 +263,6 @@ body {
   font-size: 16px;
 }
 .section__shows .container-show .section__shows__flex .section__shows__flex__info__fecha {
-  /* background-color: black; */
   border: 2px solid #E31F2C;
   border-radius: 5px;
   width: -webkit-max-content;
@@ -442,7 +425,6 @@ body {
 .banda-grid .integrantes .integrantes__flex__info .instruments {
   list-style: none;
   display: flex;
-  /* justify-content: center; */
   justify-content: space-evenly;
   padding: 0;
   margin: 0;
@@ -462,7 +444,6 @@ body {
   margin: 0;
 }
 
-/* -------------------------------   Banda --------------------------------------*/
 /* -------------------------------   Albumes --------------------------------------*/
 .album-grid {
   display: grid;
@@ -611,6 +592,7 @@ body {
   position: relative;
   padding-bottom: 0;
   z-index: 1;
+  background-color: #191919;
 }
 .section__shows__flex .section__shows__flex__info {
   padding: 0px 20px;
@@ -665,7 +647,7 @@ body {
 .section__shows__flex::before {
   content: "";
   background-image: url(https://images.unsplash.com/photo-1532622286598-f87b4290fe22?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);
-  opacity: 0.9;
+  opacity: 0.5;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -703,7 +685,6 @@ body {
   filter: drop-shadow(10px 10px 10px #E31F2C);
 }
 
-/* -------------------------------   Shows --------------------------------------*/
 /* -------------------------------   Contacto --------------------------------------*/
 .contact-grid {
   display: grid;
@@ -738,7 +719,7 @@ body {
   align-items: top;
 }
 .contact-grid .main__contacto .main__contacto-contacto .main__contacto__form {
-  background-color: rgba(57, 57, 57, 0.5); /* ----- Color de fondo html #2B2B2B convertido a rgba y con trasparencia  -----*/
+  background-color: rgba(57, 57, 57, 0.5);
   color: #E31F2C;
   padding: 10px;
   border-radius: 5px;
@@ -773,7 +754,7 @@ body {
 }
 .contact-grid .main__contacto .main__contacto-contacto .main__contacto__form .main__contacto__form__button__send {
   padding: 1px;
-  background-color: rgba(227, 31, 44, 0.5); /* ----- Color de fondo html #E31F2C convertido a rgba y con trasparencia  -----*/
+  background-color: rgba(227, 31, 44, 0.5);
   border: 1px solid;
   border-color: rgba(227, 31, 44, 0.5);
   border-radius: 5px;

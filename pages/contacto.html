@@ -39,20 +39,20 @@
         <main class="main__contacto">
             <h2 class="section__tittle">Contacto</h2>
             <div class="main__contacto-contacto">
-                <form class="main__contacto__form" action="">
+                <form class="main__contacto__form" action="form.php" method="POST">
                     <div class="main__contacto__form__nombre">
                         <label for="nombre">Nombre</label>
-                        <input type="text" id="nombre" placeholder="Ingrese su Nombre" required>
+                        <input type="text" id="nombre" name="nombre" placeholder="Ingrese su Nombre" required>
                     </div>
         
                     <div class="main__contacto__form__mail">
                         <label for="mail">Email</label>
-                        <input type="email" id="mail" placeholder="Ingrese su email" required>
+                        <input type="email" id="mail" name="mail" placeholder="Ingrese su email" required>
                     </div>
         
                     <div class="main__contacto__form__destinatario">
                         <label for="destinatario">Mensaje para</label>
-                        <select id="destinatario">
+                        <select id="destinatario" name="destinatario">
                             <option value="01">Todos</option>
                             <option value="02">Ricardo</option>
                             <option value="03">Diego</option>

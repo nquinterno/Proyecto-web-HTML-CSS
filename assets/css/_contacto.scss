@@ -37,7 +37,7 @@
             align-items:top;
 
             .main__contacto__form{
-                background-color: $dark-grey-05; /* ----- Color de fondo html #2B2B2B convertido a rgba y con trasparencia  -----*/
+                background-color: $dark-grey-05;
                 color:$rojo-div;
                 padding:10px;
                 border-radius: 5px;
@@ -76,7 +76,7 @@
                 
                 .main__contacto__form__button__send{
                     padding:1px;
-                    background-color: $rojo-div-05; /* ----- Color de fondo html #E31F2C convertido a rgba y con trasparencia  -----*/
+                    background-color: $rojo-div-05;
                     border: 1px  solid;
                     border-color: $rojo-div-05;
                     border-radius: 5px;
