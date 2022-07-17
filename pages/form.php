@@ -17,7 +17,7 @@ $asunto = 'Mensaje Web Divididos';
 
 mail($para, $asunto, utf8_decode($comentarios), $header);
 
-header('location:index.html');
+header('location:contacto.html');
 
 // .../pages/contacto.html
 ?>
