@@ -1,21 +1,21 @@
 <?php
-$nombre = $_POST['nombre'];
-$mail = $_POST['mail'];
-$destinatario = $_POST['destinatario'];
-$comentarios = $_POST['comentarios'];
+    $nombre = $_POST['nombre'];
+    $mail = $_POST['mail'];
+    $destinatario = $_POST['destinatario'];
+    $comentarios = $_POST['comentarios'];
 
-// $header = "Content-Type: text/plain";
+    // $header = "Content-Type: text/plain";
 
-$mensaje = "Mensaje Enviado por" . $nombre . ",\r\n";
-$mensaje .= "Su mail es" . $mail . ",\r\n";
-$mensaje .= "Dirigido a" . $destinatario . ",\r\n";
-$mensaje .= "Su mensaje:" . $comentarios;
-// $mensjae = "Enviado el día" date('d/m/y', time());
+    $mensaje = "Mensaje Enviado por" . $nombre . ",\r\n";
+    $mensaje .= "Su mail es" . $mail . ",\r\n";
+    $mensaje .= "Dirigido a" . $destinatario . ",\r\n";
+    $mensaje .= "Su mensaje:" . $comentarios;
+    // $mensjae = "Enviado el día" date('d/m/y', time());
 
-$para = 'nquinterno@gmail.com';
-$asunto = 'Mensaje Web Divididos';
+    $para = 'nquinterno@gmail.com';
+    $asunto = 'Mensaje Web Divididos';
 
-mail($para, $asunto, utf8_decode($mensaje), $header);
+    mail($para, $asunto, utf8_decode($mensaje), $header);
 
-header('location:../pages/contacto.html');
+    header('Location:../pages/contacto.html');
 ?>
