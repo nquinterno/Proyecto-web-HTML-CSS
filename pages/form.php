@@ -4,7 +4,7 @@ $mail = $_POST['mail'];
 $destinatario = $_POST['destinatario'];
 $comentarios = $_POST['comentarios'];
 
-$header = "Content-Type: text/plain";
+// $header = "Content-Type: text/plain";
 
 $mensaje = "Mensaje Enviado por" . $nombre . ",\r\n";
 $mensaje .= "Su mail es" . $mail . ",\r\n";
