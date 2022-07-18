@@ -6,16 +6,17 @@
 
     // $header = "Content-Type: text/plain";
 
-    $mensaje = "Mensaje Enviado por" . $nombre . ",\r\n";
-    $mensaje .= "Su mail es" . $mail . ",\r\n";
-    $mensaje .= "Dirigido a" . $destinatario . ",\r\n";
-    $mensaje .= "Su mensaje:" . $comentarios;
+    $mensaje = "Mensaje Enviado por" . $nombre;
+    $mensaje .= "\n";
+    $mensaje .= "Su mail es" . $mail;
+    $mensaje .="\n";
+    $mensaje .= "Dirigido a: " .  $destinatario;
+    $mensaje .="\n";
+    $mensaje .= "Su mensaje:" . $_POST['comentarios'];
     // $mensjae = "Enviado el día" date('d/m/y', time());
 
-    $para = 'nquinterno@gmail.com';
+    $para = "nquinterno@gmail.com";
     $asunto = 'Mensaje Web Divididos';
 
-    mail($para, $asunto, utf8_decode($mensaje), $header);
-
-    header('Location:../pages/contacto.html');
+    mail($para, $asunto, utf8_decode($mensaje));
 ?>
