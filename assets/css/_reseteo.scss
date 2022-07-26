@@ -12,7 +12,7 @@
 
 html {
   font-family: "Inter", sans-serif;
-  color: gray;
+  color: $ligth-grey;
   margin: 0%;
   padding: 0%;
 }
@@ -20,7 +20,7 @@ html {
 body {
   margin: 0%;
   padding: 0%;
-  background-color: black;
+  background-color: $black;
   font-family: 'Shippori Antique B1', sans-serif;
   font-size: 16px;
   writing-mode: horizontal-tb;
@@ -29,7 +29,7 @@ body {
 a {
   list-style-type: none;
   text-decoration: none;
-  color: #0b0c0d;
+  color: $black;
   margin-bottom:0px;
   margin:0px;
 }

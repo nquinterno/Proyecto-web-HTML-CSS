@@ -1,17 +1,17 @@
 
 /* -------------------------- General Config ---------------------------------*/
 body{
-    background-color:black;
+    background-color:$black;
     width: 99vw;
     height: auto;
 }
 
 .section {
-    background-color:black;
+    background-color:$black;
 }
 
 .section__tittle{
-    color:white;
+    color:$white;
     text-decoration: none;
     font-size:30px;
     text-align: center;
@@ -31,7 +31,7 @@ body{
 
 .header{
     grid-area:header;
-    background-color: black;
+    background-color: $black;
     display:flex;
     align-items: center;
     justify-content: space-between;
@@ -63,7 +63,7 @@ body{
         justify-items: center;
         border: 2px solid;
         border-color:$rojo-div;
-        background-color: black;
+        background-color: $black;
         z-index: 0;
         padding: 10px 0px;
         margin: 0 10px;
@@ -80,7 +80,7 @@ body{
                 display:inline;
                 margin-bottom:0px;
                 a{
-                    color:white;
+                    color:$white;
                     text-decoration: none;
                     font-weight: bold;
                     font-size: 20px;
@@ -113,9 +113,9 @@ body{
         justify-content: space-between;
 
         margin: 15px 10px;
-        background-color:#393939;
+        background-color:$dark-grey;
         border: 2px solid;
-        border-color:gray;
+        border-color:$ligth-grey;
         border-radius: 5px;
         height: 70px;
         width: auto;
@@ -132,14 +132,14 @@ body{
         }
         .footer-div__copy{
             margin-right: 20px;
-            color:gray;
+            color:$ligth-grey;
 
             .footer__copy__text {
                 font-weight: bold;
                 margin-bottom: 0px;
             }
             .footer__copy__text:hover {
-                color:#E31F2C;
+                color:$rojo-div;
             }
         
         }
@@ -147,7 +147,7 @@ body{
 
     
     .social{
-        color:gray;
+        color:$ligth-grey;
         font-size: 40px;
     }
 

@@ -33,7 +33,6 @@
         .header__nav{
             width:70%;
             height: 100%;
-            // margin-right:40px;
             border:none;
             display:flex;
             justify-content: center;
@@ -52,7 +51,7 @@
                     list-style: none;
 
                      a{
-                        color:white;
+                        color:$white;
                         font-size:14px;
                     }
                 }
@@ -77,9 +76,9 @@
             align-items: center;
             justify-content: space-between;
             margin: 5px 5px;
-            background-color:#393939;
+            background-color:$dark-grey;
             border: 2px solid;
-            border-color:gray;
+            border-color:$ligth-grey;
             border-radius: 5px;
             height: 100%;
             width: auto;
@@ -97,7 +96,7 @@
 
             .footer-div__copy{
                 padding-right: 10px;
-                color:gray;
+                color:$ligth-grey;
 
                 .footer__copy__text {
                     font-weight: bold;
@@ -131,7 +130,7 @@
             margin-top:40px;
 
             .main__title{
-                color:white;
+                color:$white;
                 font-size: 25px;
                 text-align: center;
                 margin-top: 20px;
@@ -154,7 +153,6 @@
             width:100%;
             height: auto;
             padding: 10px;
-            // margin: 10px;
     
             .section__tittle{
                 font-size: 20px;
@@ -364,7 +362,7 @@
         width: 100%;
         padding: 2px 2px;
         margin: 0px 0px;
-        background-color: black;
+        background-color: $black;
         position: fixed;
         top:0;
         z-index:99;
@@ -395,7 +393,7 @@
                 width: 100%;
                 height: calc(100vh - 50px);
                 top:50px;
-                background-color: black;
+                background-color: $black;
                 opacity:80%;
                 text-align: center;
                 text-decoration: none;
@@ -415,14 +413,14 @@
                         text-decoration: none;
                         font-weight: bold;
                         font-size: 18px;
-                        color:#E31F2C;
+                        color:$rojo-div;
                         transition: all 0.5s;
                         z-index:99;
                     }
                 }
 
                 li a:hover {
-                    color:white;
+                    color:$white;
                 }
             
 
@@ -438,7 +436,7 @@
         }
         .checkbtn{
             display:inline-block;
-            color:#E31F2C;
+            color:$rojo-div;
             font-size: 30px;
             cursor:pointer;
             margin:5px;
@@ -447,7 +445,7 @@
         }
     
         .lnr.lnr-menu{
-            color:#E31F2C;
+            color:$rojo-div;
             font-size: 30px;
         }
     }
@@ -508,7 +506,6 @@
         .section__shows{
             grid-area:show;
             display:flex;
-            // flex-direction: column;
             justify-content: space-evenly;
             gap:10px;
             width:100%;
@@ -656,7 +653,6 @@
 
     /* -------------------------- Album Page -----------------------------*/ 
     .section__tittle{
-        /* margin-top:80px; */
         font-size: 25px;
     }
 
@@ -750,10 +746,6 @@
 
         }
     
-        // .ticket{
-        //     a{
-        //     font-size: 10px;}
-        // }
     }
    
 
@@ -779,7 +771,7 @@
 
             .main__title{
                 font-size: 20px;
-                color: #fff;
+                color: $white;
                 margin-top:60px;
                 text-align: center;
             }
@@ -793,8 +785,8 @@
                 align-items:top;
         
                 .main__contacto__form{
-                    background-color: rgba(43,43,43,0.6); 
-                    color:#E31F2C;
+                    background-color: $dark-grey-05; 
+                    color:$rojo-div;
                     padding:2px;
                     border-radius: 5px;
                     height: max-content;
@@ -855,7 +847,7 @@
                                 height: auto;
                                 width: 20%;
                                 font-weight: 700;
-                                box-shadow: 5px 5px rgba(227,31,44,0.2);
+                                box-shadow: 5px 5px $rojo-div-03;
                         }
                     
                         .main__contacto__form__button__send:focus{
@@ -868,15 +860,15 @@
                     
                         .main__contacto__form__button__reset{
                                 padding:1px;
-                                background-color: rgba(255,255,255,0.5);
+                                background-color: $ligth-grey-05;
                                 border: 1px  solid;
-                                border-color: white;
+                                border-color: $white;
                                 border-radius: 5px;
                                 margin-top:1vw;
-                                color:black;
+                                color:$black;
                                 font-weight: 700;
                                 width: 20%;
-                                box-shadow: 5px 5px rgba(0,0,0,0.2);
+                                box-shadow: 5px 5px $black-02;
                         }
                     
                         .main__contacto__form__button__reset:focus{
