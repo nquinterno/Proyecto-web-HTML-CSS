@@ -149,7 +149,6 @@
         .section__shows{
             grid-area:show;
             display:flex;
-            flex-direction: column;
             justify-content: space-evenly;
             gap:10px;
             width:100%;
@@ -190,11 +189,15 @@
             .spotify__reproductor{
                 height: 80px;
                 width: 100%;
+                .disco{
+                    display:none;
+                }
             }
         }  
     
     }
-        /* ----------------- Banda page tablet-------------------*/
+
+    /* ----------------- Banda page tablet-------------------*/
     .banda-grid{
         display:grid;
         justify-items:center;
@@ -257,18 +260,14 @@
                     }
                 }
             }
-        
-        }
-          
-
+        }  
     }
 
         
-        /* ----------------- Albumes page tablet -------------------*/
+    /* ----------------- Albumes page tablet -------------------*/
 
-    
     .section__tittle{
-            font-size: 25px;
+        font-size: 25px;
     }
         
     .albumes__spotify-1{
@@ -300,8 +299,31 @@
 
     
 
-        /* ----------------- Shows Page tablet -------------------*/
+    /* ----------------- Shows Page tablet -------------------*/
+    .shows-grid{
 
+        .shows{
+            .calendar{
+                .month-tittle{
+                    font-size:20px;
+                }
+    
+                .month{
+                    .day-tittle{
+                        margin:2px;
+                        padding:0px; 
+                    }
+                    
+                    li{
+                        font-size: 12px;
+
+                    }
+                }
+            }
+        }
+
+    }
+    
 
     .Section__shows{
         padding:10px;
@@ -433,7 +455,6 @@
     /*---------------------- FOOTER -----------------------------*/
 
     .footer{
-        height: auto;
 
         .footer-div{
             display: flex;
@@ -449,6 +470,13 @@
                 margin-left: 0px;
                 padding: 0px 0px;
                 padding-left: 0px;
+                li{
+                    a{
+                        i{
+                            font-size: 30px;
+                        }
+                    }
+                }
             }
                 
         }
@@ -480,7 +508,7 @@
         .section__shows{
             grid-area:show;
             display:flex;
-            flex-direction: column;
+            // flex-direction: column;
             justify-content: space-evenly;
             gap:10px;
             width:100%;
@@ -538,6 +566,7 @@
             }
             .disco{
                 font-size: 20px;
+                display: none;
             }
         }
     }
@@ -644,6 +673,7 @@
         p{
             font-size:10px;
             z-index:50;
+            
         }
     }
     .albumes__temas{
@@ -661,40 +691,69 @@
 
     .shows-grid{
         .shows{
+            padding:5px;
+
+            .calendar{
+                .month-tittle{
+                    font-size:20px;
+                }
+                .month{
+
+                    .day-tittle{
+                        margin:1px;
+                        padding:0px;
+                        
+                    }
+                    
+                    li{
+                        font-size: 10px;
+                    }
+                    
+                }
+
+            }
+
             .section__tittle{
                 margin-top:80px;            
             }
 
-            .section__shows-shows{
+            
 
-                .section__shows__flex{
-                    &__info{
-                        &__fecha{
-                            p{
-                                font-size: 12px;
-                            }
-                        }
+        }
 
-                        &__text{
-                            p{
-                                font-size:12px;
-                            }
-                            
-                        }
-
+        .section__shows__flex{
+            .section__shows__flex__info{
+                padding:0px 5px;
+                .section__shows__flex__info__fecha{
+                    p{
+                        font-size: 12px;
                     }
-
                 }
 
+                .section__shows__flex__info__text{
+                    p{
+                        font-size:12px;
+                        margin: 10px 0px;
+                    }    
+                }
             }
-        
-        
+
+            .section__shows__flex__info__text__button{
+                button a{
+                    font-size: 12px;
+                    font-weight: 600;
+                }
+            }
+        }
+
+        .galery-master{
+
         }
     
-        .ticket{
-            a{
-            font-size: 10px;}
-        }
+        // .ticket{
+        //     a{
+        //     font-size: 10px;}
+        // }
     }
    
 
@@ -708,13 +767,14 @@
             justify-items: center;
             width: 100%;
             height: auto;
+            margin-top: 80px;
     
         .main__contacto{
             display: grid;
             grid-area: contacto;
             background-image: url(https://wc.wallpaperuse.com/wallp/9-99732_s.jpg);
             width: 100%;
-            height: auto;
+            height: 100%;
             background-position: center;
 
             .main__title{
@@ -733,7 +793,7 @@
                 align-items:top;
         
                 .main__contacto__form{
-                    background-color: rgba(43,43,43,0.6); /* ----- Color de fondo html #2B2B2B convertido a rgba y con trasparencia  -----*/
+                    background-color: rgba(43,43,43,0.6); 
                     color:#E31F2C;
                     padding:2px;
                     border-radius: 5px;
@@ -786,9 +846,9 @@
                     
                         .main__contacto__form__button__send{
                                 padding:1px;
-                                background-color: rgba(227,31,44,0.5); /* ----- Color de fondo html #E31F2C convertido a rgba y con trasparencia  -----*/
+                                background-color: $rojo-div-05;
                                 border: 1px  solid;
-                                border-color: rgba(227,31,44,0.5);
+                                border-color: $rojo-div-05;
                                 border-radius: 5px;
                                 margin-top:1vw;
                                 color:white;

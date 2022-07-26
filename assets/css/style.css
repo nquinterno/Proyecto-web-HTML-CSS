@@ -142,6 +142,9 @@ body {
   font-weight: bold;
   font-size: 20px;
 }
+.header .header__nav .header__nav__list li a:hover {
+  color: #E31F2C;
+}
 
 /* ----------------------- Footer Gral--------------------------------*/
 .footer {
@@ -151,7 +154,8 @@ body {
   padding: 10px;
   margin: 10px;
   align-self: center;
-  margin-top: 50px;
+  margin-top: 30px;
+  margin-bottom: 20px;
 }
 .footer .footer-div {
   display: flex;
@@ -484,7 +488,7 @@ body {
   transition: all 0.5s;
 }
 .album-grid .albumes .section__album .albumes__tabla .albumes__album :hover, .album-grid .albumes .section__album .albumes__tabla .albumes__año :hover, .album-grid .albumes .section__album .albumes__tabla .albumes__spotify :hover, .album-grid .albumes .section__album .albumes__tabla .albumes__spotify-1 :hover {
-  background-color: rgba(57, 57, 57, 0.5);
+  background: rgba(57, 57, 57, 0.5);
 }
 .album-grid .albumes .section__album .albumes__tabla .albumes__album p, .album-grid .albumes .section__album .albumes__tabla .albumes__año p, .album-grid .albumes .section__album .albumes__tabla .albumes__spotify p, .album-grid .albumes .section__album .albumes__tabla .albumes__spotify-1 p {
   width: auto;
@@ -516,8 +520,8 @@ body {
 .album-grid .albumes .section__album .albumes__tabla .albumes__temas ol:hover {
   transform: translate(-2px, -2px);
 }
-.album-grid .albumes .section__album .albumes__tabla .albumes__temas :hover {
-  background-color: rgba(57, 57, 57, 0.5);
+.album-grid .albumes .section__album .albumes__tabla .albumes__temas ol:hover {
+  background: rgba(57, 57, 57, 0.5);
 }
 
 /* -------------------------------   Shows --------------------------------------*/
@@ -526,10 +530,12 @@ body {
   grid-template-areas: "header" "shows" "galery-master" "footer";
   justify-items: center;
   align-items: center;
+  width: 100%;
 }
 .shows-grid .shows {
   grid-area: shows;
   justify-content: center;
+  width: 100%;
 }
 .shows-grid .shows .calendar {
   width: 100%;
@@ -554,6 +560,7 @@ body {
 .shows-grid .shows .calendar .month li {
   display: flex;
   justify-content: center;
+  align-items: center;
   color: #E31F2C;
 }
 .shows-grid .shows .calendar .month .day-show {
@@ -586,18 +593,17 @@ body {
 .shows-grid .shows .october .first-day {
   grid-column-start: 7;
 }
-
-.section__shows__flex {
+.shows-grid .section__shows__flex {
   padding: 10px;
   position: relative;
   padding-bottom: 0;
   z-index: 1;
   background-color: #191919;
 }
-.section__shows__flex .section__shows__flex__info {
+.shows-grid .section__shows__flex .section__shows__flex__info {
   padding: 0px 20px;
 }
-.section__shows__flex .section__shows__flex__info .section__shows__flex__info__fecha {
+.shows-grid .section__shows__flex .section__shows__flex__info .section__shows__flex__info__fecha {
   background-color: #191919;
   border: 2px solid #E31F2C;
   border-radius: 5px;
@@ -611,7 +617,7 @@ body {
   position: relative;
   z-index: 1;
 }
-.section__shows__flex .section__shows__flex__info__text__button button {
+.shows-grid .section__shows__flex .section__shows__flex__info__text__button button {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
@@ -621,30 +627,29 @@ body {
   border: 2px solid #E31F2C;
   position: relative;
 }
-.section__shows__flex .section__shows__flex__info__text__button button a {
+.shows-grid .section__shows__flex .section__shows__flex__info__text__button button a {
   color: #FAFAFA;
 }
-.section__shows__flex .section__shows__flex__info__text__button button a:hover {
+.shows-grid .section__shows__flex .section__shows__flex__info__text__button button a:hover {
   color: #191919;
 }
-.section__shows__flex .section__shows__flex__info__text__button button:hover {
+.shows-grid .section__shows__flex .section__shows__flex__info__text__button button:hover {
   background-color: #E31F2C;
   color: #191919;
 }
-.section__shows__flex .section__shows__flex__info__text p {
+.shows-grid .section__shows__flex .section__shows__flex__info__text p {
   color: #FAFAFA;
   position: relative;
   z-index: 1;
   font-size: 16px;
   background-color: rgba(25, 25, 25, 0.5);
 }
-.section__shows__flex .section__shows__flex__map {
+.shows-grid .section__shows__flex .section__shows__flex__map {
   margin: 0;
   position: relative;
   z-index: 1;
 }
-
-.section__shows__flex::before {
+.shows-grid .section__shows__flex::before {
   content: "";
   background-image: url(https://images.unsplash.com/photo-1532622286598-f87b4290fe22?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);
   opacity: 0.5;
@@ -658,29 +663,28 @@ body {
   position: absolute;
   z-index: -1;
 }
-
-.galery-master {
+.shows-grid .galery-master {
   grid-area: galery-master;
   width: 100%;
   height: auto;
 }
-.galery-master .epigrafe_galeria:hover {
+.shows-grid .galery-master .epigrafe_galeria:hover {
   background-color: rgba(43, 43, 43, 0.5);
   color: #FAFAFA;
 }
-.galery-master .carousel-boton {
+.shows-grid .galery-master .carousel-boton {
   width: 5%;
 }
-.galery-master .carousel-item {
+.shows-grid .galery-master .carousel-item {
   width: 100%;
   margin-top: 50px;
   margin-bottom: 50px;
 }
-.galery-master .carousel-item .galery-img {
+.shows-grid .galery-master .carousel-item .galery-img {
   transition: 0.5s;
   z-index: 100;
 }
-.galery-master .carousel-item .galery-img:hover {
+.shows-grid .galery-master .carousel-item .galery-img:hover {
   transform: scale(1.25, 1.25);
   filter: drop-shadow(10px 10px 10px #E31F2C);
 }
@@ -702,6 +706,8 @@ body {
   width: 100%;
   height: auto;
   background-position: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
 .contact-grid .main__contacto .main__tittle {
   color: #FAFAFA;
@@ -911,7 +917,6 @@ body {
   .index-grid .section__shows {
     grid-area: show;
     display: flex;
-    flex-direction: column;
     justify-content: space-evenly;
     gap: 10px;
     width: 100%;
@@ -944,6 +949,9 @@ body {
   .index-grid .spotify .spotify__reproductor {
     height: 80px;
     width: 100%;
+  }
+  .index-grid .spotify .spotify__reproductor .disco {
+    display: none;
   }
   /* ----------------- Banda page tablet-------------------*/
   .banda-grid {
@@ -1016,6 +1024,16 @@ body {
     font-size: 13px;
   }
   /* ----------------- Shows Page tablet -------------------*/
+  .shows-grid .shows .calendar .month-tittle {
+    font-size: 20px;
+  }
+  .shows-grid .shows .calendar .month .day-tittle {
+    margin: 2px;
+    padding: 0px;
+  }
+  .shows-grid .shows .calendar .month li {
+    font-size: 12px;
+  }
   .Section__shows {
     padding: 10px;
   }
@@ -1118,9 +1136,6 @@ body {
     font-size: 30px;
   }
   /*---------------------- FOOTER -----------------------------*/
-  .footer {
-    height: auto;
-  }
   .footer .footer-div {
     display: flex;
     align-items: center;
@@ -1134,6 +1149,9 @@ body {
     margin-left: 0px;
     padding: 0px 0px;
     padding-left: 0px;
+  }
+  .footer .footer-div .footer-div__redes li a i {
+    font-size: 30px;
   }
   .index-grid {
     display: grid;
@@ -1151,7 +1169,6 @@ body {
   .index-grid .section__shows {
     grid-area: show;
     display: flex;
-    flex-direction: column;
     justify-content: space-evenly;
     gap: 10px;
     width: 100%;
@@ -1197,6 +1214,7 @@ body {
   }
   .index-grid .spotify .disco {
     font-size: 20px;
+    display: none;
   }
   /* -------------------------- Band Page -----------------------------*/
   .banda-grid {
@@ -1284,17 +1302,35 @@ body {
     font-size: 10px;
   }
   /* -------------------------- Shows Page -----------------------------*/
+  .shows-grid .shows {
+    padding: 5px;
+  }
+  .shows-grid .shows .calendar .month-tittle {
+    font-size: 20px;
+  }
+  .shows-grid .shows .calendar .month .day-tittle {
+    margin: 1px;
+    padding: 0px;
+  }
+  .shows-grid .shows .calendar .month li {
+    font-size: 10px;
+  }
   .shows-grid .shows .section__tittle {
     margin-top: 80px;
   }
-  .shows-grid .shows .section__shows-shows .section__shows__flex__info__fecha p {
+  .shows-grid .section__shows__flex .section__shows__flex__info {
+    padding: 0px 5px;
+  }
+  .shows-grid .section__shows__flex .section__shows__flex__info .section__shows__flex__info__fecha p {
     font-size: 12px;
   }
-  .shows-grid .shows .section__shows-shows .section__shows__flex__info__text p {
+  .shows-grid .section__shows__flex .section__shows__flex__info .section__shows__flex__info__text p {
     font-size: 12px;
+    margin: 10px 0px;
   }
-  .shows-grid .ticket a {
-    font-size: 10px;
+  .shows-grid .section__shows__flex .section__shows__flex__info__text__button button a {
+    font-size: 12px;
+    font-weight: 600;
   }
   /* -------------------------- Contact Page -----------------------------*/
   .contact-grid {
@@ -1304,13 +1340,14 @@ body {
     justify-items: center;
     width: 100%;
     height: auto;
+    margin-top: 80px;
   }
   .contact-grid .main__contacto {
     display: grid;
     grid-area: contacto;
     background-image: url(https://wc.wallpaperuse.com/wallp/9-99732_s.jpg);
     width: 100%;
-    height: auto;
+    height: 100%;
     background-position: center;
   }
   .contact-grid .main__contacto .main__title {
@@ -1328,7 +1365,7 @@ body {
     align-items: top;
   }
   .contact-grid .main__contacto .main__contacto-contacto .main__contacto__form {
-    background-color: rgba(43, 43, 43, 0.6); /* ----- Color de fondo html #2B2B2B convertido a rgba y con trasparencia  -----*/
+    background-color: rgba(43, 43, 43, 0.6);
     color: #E31F2C;
     padding: 2px;
     border-radius: 5px;
@@ -1371,7 +1408,7 @@ body {
   }
   .contact-grid .main__contacto .main__contacto-contacto .main__contacto__form .main__contacto__form__button .main__contacto__form__button__send {
     padding: 1px;
-    background-color: rgba(227, 31, 44, 0.5); /* ----- Color de fondo html #E31F2C convertido a rgba y con trasparencia  -----*/
+    background-color: rgba(227, 31, 44, 0.5);
     border: 1px solid;
     border-color: rgba(227, 31, 44, 0.5);
     border-radius: 5px;

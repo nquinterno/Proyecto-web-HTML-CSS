@@ -43,7 +43,7 @@
                     transition:all 0.5s;
 
                     :hover{
-                        background-color:$dark-grey-05;
+                        background: $dark-grey-05;
                         
                     }
 
@@ -80,8 +80,8 @@
                         transform: translate(-2px,-2px);
                     }
 
-                    :hover{
-                        background-color:$dark-grey-05;
+                    ol:hover{
+                        background: $dark-grey-05;
                     }
                 }
             }

@@ -8,29 +8,30 @@
                         "footer";
     justify-items: center;
     align-items:center;
+    width:100%;
 
     .shows{
         grid-area:shows;
         justify-content: center;
+        width:100%;
         
         .calendar{
             width: 100%;
 
             .carousel-control-prev{
                 width:5%;
-
             }
 
             .carousel-control-next{
                 width:5%;
-
             }
+            
             .month-tittle{
                 display:flex;
                 justify-content: center;
-                color:$rojo-div;
-                
+                color:$rojo-div; 
             }
+
             .month{
                 list-style: none;
                 display: grid;
@@ -40,6 +41,7 @@
                 li{
                     display: flex;
                     justify-content: center;
+                    align-items: center;
                     color:$rojo-div;
                 }
 
@@ -70,26 +72,25 @@
 
         }
 
-            .august{
-                .first-day{
-                    grid-column-start:2;
-                }
-            }
-
-            .september{
-                .first-day{
-                    grid-column-start:5;
-                }
-            }
-
-            .october{
-                .first-day{
-                    grid-column-start:7;
-                }
+        .august{
+            .first-day{
+                grid-column-start:2;
             }
         }
-          
+
+        .september{
+            .first-day{
+                grid-column-start:5;
+            }
+        }
+
+        .october{
+            .first-day{
+                grid-column-start:7;
+            }
+        }
     }
+          
 
     .section__shows__flex{
         padding:10px;
@@ -182,27 +183,27 @@
             background-color: rgba(43,43,43,0.5);
             color:$white;}
 
-            .carousel-boton{
+        .carousel-boton{
                 width: 5%;
-            }
+        }
 
-            .carousel-item{
+        .carousel-item{
                 width:100%;
                 margin-top: 50px;
                 margin-bottom: 50px;
 
-                .galery-img{
-                    transition:0.5s;
-                    z-index:100;
+            .galery-img{
+                transition:0.5s;
+                z-index:100;
 
-                }
-
-                .galery-img:hover{
-                    transform:scale(1.25,1.25);
-                    filter:drop-shadow(10px 10px 10px $rojo-div);
-                }
             }
 
-    }
+            .galery-img:hover{
+                transform:scale(1.25,1.25);
+                filter:drop-shadow(10px 10px 10px $rojo-div);
+            }
+        }
 
+    }
+}
 
